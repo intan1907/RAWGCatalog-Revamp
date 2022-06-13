@@ -49,6 +49,46 @@
                ReferencedContainer = "container:RAWGCatalog.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "EF64AB652851B12C004ADEF3"
+               BuildableName = "AboutModuleTests.xctest"
+               BlueprintName = "AboutModuleTests"
+               ReferencedContainer = "container:../Modules/AboutModule/AboutModule.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "EF402459284F1F9D00F75167"
+               BuildableName = "GameModuleTests.xctest"
+               BlueprintName = "GameModuleTests"
+               ReferencedContainer = "container:../Modules/GameModule/GameModule.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "EF64AB3E285193FF004ADEF3"
+               BuildableName = "GenreModuleTests.xctest"
+               BlueprintName = "GenreModuleTests"
+               ReferencedContainer = "container:../Modules/GenreModule/GenreModule.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "EF64AB882851D87B004ADEF3"
+               BuildableName = "StoreModuleTests.xctest"
+               BlueprintName = "StoreModuleTests"
+               ReferencedContainer = "container:../Modules/StoreModule/StoreModule.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
