@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Genre Detail-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="GenreDetailVC" customModule="RAWGCatalog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYP-Ni-ehq">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aBu-Pa-AeF">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="279.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Lq7-47-8PH">
+                                                <rect key="frame" x="16" y="16" width="382" height="247.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVk-I1-Aab" customClass="CustomLabel" customModule="RAWGCatalog" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="22.5"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                                <integer key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awj-ar-BeZ" customClass="CustomLabel" customModule="RAWGCatalog" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="26.5" width="382" height="17"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                                <integer key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Im3-Hi-bs8">
+                                                        <rect key="frame" x="0.0" y="47.5" width="382" height="200"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="200" id="FiA-jR-pZr"/>
+                                                        </constraints>
+                                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="12" minimumInteritemSpacing="12" id="GB4-xl-rvR">
+                                                            <size key="itemSize" width="128" height="128"/>
+                                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        </collectionViewFlowLayout>
+                                                        <cells/>
+                                                    </collectionView>
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJl-Gy-oS3" customClass="CustomButton" customModule="RAWGCatalog" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="247.5" width="382" height="56"/>
+                                                        <color key="backgroundColor" name="ColorGrayTransparentAdaptive"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="56" id="ymD-07-OXu"/>
+                                                        </constraints>
+                                                        <color key="tintColor" name="ColorTextAdaptive"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="See all">
+                                                            <fontDescription key="titleFontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="14"/>
+                                                        </buttonConfiguration>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="0.0"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="seeAllGamesBtnAction" destination="Y6W-OH-hqX" eventType="touchUpInside" id="be7-VO-GY8"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Lq7-47-8PH" secondAttribute="trailing" constant="16" id="3t8-OM-GvR"/>
+                                            <constraint firstItem="Lq7-47-8PH" firstAttribute="top" secondItem="aBu-Pa-AeF" secondAttribute="top" constant="16" id="Atq-rH-GMw"/>
+                                            <constraint firstAttribute="bottom" secondItem="Lq7-47-8PH" secondAttribute="bottom" constant="16" id="FNS-jE-m33"/>
+                                            <constraint firstItem="Lq7-47-8PH" firstAttribute="leading" secondItem="aBu-Pa-AeF" secondAttribute="leading" constant="16" id="UbO-gs-Bpb"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="aBu-Pa-AeF" secondAttribute="bottom" id="7mg-6N-fnf"/>
+                                    <constraint firstItem="aBu-Pa-AeF" firstAttribute="leading" secondItem="VYP-Ni-ehq" secondAttribute="leading" id="CNv-3W-Zk6"/>
+                                    <constraint firstItem="aBu-Pa-AeF" firstAttribute="height" secondItem="VYP-Ni-ehq" secondAttribute="height" priority="250" id="F8h-5J-uVe"/>
+                                    <constraint firstItem="aBu-Pa-AeF" firstAttribute="top" secondItem="VYP-Ni-ehq" secondAttribute="top" id="Fed-5p-0yS"/>
+                                    <constraint firstItem="aBu-Pa-AeF" firstAttribute="width" secondItem="VYP-Ni-ehq" secondAttribute="width" id="iHb-Ax-9Vn"/>
+                                    <constraint firstAttribute="trailing" secondItem="aBu-Pa-AeF" secondAttribute="trailing" id="tO5-rd-XRI"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VYP-Ni-ehq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="9aB-f7-c3J"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="VYP-Ni-ehq" secondAttribute="bottom" id="HlT-2U-aaH"/>
+                            <constraint firstItem="VYP-Ni-ehq" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="nJg-Fh-14p"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VYP-Ni-ehq" secondAttribute="trailing" id="pXM-cJ-pAi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Genre Detail" id="vwo-YD-qtr">
+                        <barButtonItem key="leftBarButtonItem" image="ic_back" id="mvR-Ri-lEH">
+                            <connections>
+                                <action selector="backBtnAction:" destination="Y6W-OH-hqX" id="QzD-zj-CNI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="containerVw" destination="aBu-Pa-AeF" id="5oz-JB-Fpu"/>
+                        <outlet property="gamesCollectionHeightConst" destination="FiA-jR-pZr" id="Mi2-jp-UY7"/>
+                        <outlet property="gamesCollectionVw" destination="Im3-Hi-bs8" id="Zpq-dV-PNY"/>
+                        <outlet property="genreDescLbl" destination="awj-ar-BeZ" id="Z2O-Pk-Dh4"/>
+                        <outlet property="scrollVw" destination="VYP-Ni-ehq" id="FhT-MS-Cl3"/>
+                        <outlet property="seeAllGamesBtn" destination="RJl-Gy-oS3" id="KfZ-zV-5UQ"/>
+                        <outlet property="titleLbl" destination="wVk-I1-Aab" id="Fkh-Zo-0z1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="884.05797101449286" y="30.803571428571427"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_back" width="24" height="24"/>
+        <namedColor name="ColorGrayTransparentAdaptive">
+            <color red="0.81999999284744263" green="0.81999999284744263" blue="0.83499997854232788" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ColorTextAdaptive">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

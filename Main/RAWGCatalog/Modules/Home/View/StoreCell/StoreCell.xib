@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StoreCell" id="Hkb-Cs-W4B" customClass="StoreCell" customModule="RAWGCatalog" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="145" height="165"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="145" height="165"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Rf-ER-qIB">
+                        <rect key="frame" x="0.0" y="0.0" width="145" height="145"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="8Rf-ER-qIB" secondAttribute="height" multiplier="1:1" id="xfd-ih-IZZ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHm-KV-GGN" customClass="CustomLabel" customModule="RAWGCatalog" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="151" width="145" height="14"/>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                        <color key="textColor" name="ColorTextAdaptive"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="BOM-uT-veq"/>
+            <constraints>
+                <constraint firstItem="YHm-KV-GGN" firstAttribute="top" secondItem="8Rf-ER-qIB" secondAttribute="bottom" constant="6" id="9fx-6x-jbz"/>
+                <constraint firstAttribute="bottom" secondItem="YHm-KV-GGN" secondAttribute="bottom" id="AAB-4U-ofF"/>
+                <constraint firstItem="8Rf-ER-qIB" firstAttribute="top" secondItem="Hkb-Cs-W4B" secondAttribute="top" id="Nas-tq-89E"/>
+                <constraint firstItem="8Rf-ER-qIB" firstAttribute="leading" secondItem="Hkb-Cs-W4B" secondAttribute="leading" id="PHN-H6-yeS"/>
+                <constraint firstItem="YHm-KV-GGN" firstAttribute="leading" secondItem="Hkb-Cs-W4B" secondAttribute="leading" id="bET-lO-elE"/>
+                <constraint firstAttribute="trailing" secondItem="8Rf-ER-qIB" secondAttribute="trailing" id="bYO-hH-AcF"/>
+                <constraint firstAttribute="trailing" secondItem="YHm-KV-GGN" secondAttribute="trailing" id="fsg-qP-gju"/>
+            </constraints>
+            <size key="customSize" width="145" height="165"/>
+            <connections>
+                <outlet property="backgroundImg" destination="8Rf-ER-qIB" id="Zz2-n2-i0g"/>
+                <outlet property="nameLbl" destination="YHm-KV-GGN" id="LBw-FR-g97"/>
+            </connections>
+            <point key="canvasLocation" x="206.52173913043481" y="92.075892857142847"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="ColorTextAdaptive">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

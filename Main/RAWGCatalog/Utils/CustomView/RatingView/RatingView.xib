@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="a2p-kL-J1z" customClass="RatingView" customModule="RAWGCatalog" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="24"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="QFg-6m-lje">
+                    <rect key="frame" x="0.0" y="4" width="104" height="16"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star_fill" translatesAutoresizingMaskIntoConstraints="NO" id="VSP-68-MhD">
+                            <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="IAC-XZ-MZB"/>
+                                <constraint firstAttribute="width" constant="16" id="d1E-1A-nPB"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star_fill" translatesAutoresizingMaskIntoConstraints="NO" id="Glp-sK-cZW">
+                            <rect key="frame" x="22" y="0.0" width="16" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="kzX-i1-6lW"/>
+                                <constraint firstAttribute="width" constant="16" id="qlW-et-U3m"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star_fill" translatesAutoresizingMaskIntoConstraints="NO" id="Rb2-hk-lYr">
+                            <rect key="frame" x="44" y="0.0" width="16" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="16" id="Dlm-oP-uZL"/>
+                                <constraint firstAttribute="height" constant="16" id="hFZ-lm-rGt"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star_fill" translatesAutoresizingMaskIntoConstraints="NO" id="9cV-kZ-8GD">
+                            <rect key="frame" x="66" y="0.0" width="16" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="16" id="7bF-m3-BPe"/>
+                                <constraint firstAttribute="height" constant="16" id="dVo-uN-vYM"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star_fill" translatesAutoresizingMaskIntoConstraints="NO" id="6sV-h3-U42">
+                            <rect key="frame" x="88" y="0.0" width="16" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="Qv3-Rt-MX2"/>
+                                <constraint firstAttribute="width" constant="16" id="zEx-fA-MLG"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="MtQ-VZ-jxs"/>
+                        <constraint firstAttribute="width" constant="104" id="WZp-Yf-LB6"/>
+                    </constraints>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bk5-oY-mCW" customClass="CustomLabel" customModule="RAWGCatalog" customModuleProvider="target">
+                    <rect key="frame" x="112" y="3.5" width="302" height="17"/>
+                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="style">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="CXc-tD-tHr"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Bk5-oY-mCW" firstAttribute="centerY" secondItem="QFg-6m-lje" secondAttribute="centerY" id="4Hw-oq-zsh"/>
+                <constraint firstItem="CXc-tD-tHr" firstAttribute="trailing" secondItem="Bk5-oY-mCW" secondAttribute="trailing" id="FzK-UM-OmB"/>
+                <constraint firstItem="QFg-6m-lje" firstAttribute="leading" secondItem="a2p-kL-J1z" secondAttribute="leading" id="Ll6-Kf-Y29"/>
+                <constraint firstItem="QFg-6m-lje" firstAttribute="top" secondItem="a2p-kL-J1z" secondAttribute="top" constant="4" id="W6Q-Bb-ojo"/>
+                <constraint firstItem="Bk5-oY-mCW" firstAttribute="leading" secondItem="QFg-6m-lje" secondAttribute="trailing" constant="8" id="X8N-8t-Zqp"/>
+                <constraint firstAttribute="bottom" secondItem="QFg-6m-lje" secondAttribute="bottom" constant="4" id="bQX-qA-ojc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="ratingLbl" destination="Bk5-oY-mCW" id="as6-mf-3j9"/>
+                <outlet property="ratingStack" destination="QFg-6m-lje" id="hX3-Em-cZc"/>
+                <outlet property="ratingStackWidthConst" destination="WZp-Yf-LB6" id="0na-Vg-IKx"/>
+            </connections>
+            <point key="canvasLocation" x="-630.43478260869574" y="-465.40178571428567"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_star_fill" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
