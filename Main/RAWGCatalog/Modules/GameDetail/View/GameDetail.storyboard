@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qM1-Eg-5kW">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Game Detail-->
+        <scene sceneID="w3T-kO-agW">
+            <objects>
+                <viewController id="qM1-Eg-5kW" customClass="GameDetailVC" customModule="RAWGCatalog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1bf-dk-T5E">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qeD-j4-7mJ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lwE-Dm-bOH">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oCU-lC-Sm6">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="233"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="oCU-lC-Sm6" secondAttribute="height" multiplier="16:9" id="YOD-c7-Zjm"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQh-5o-cY6" customClass="CustomLabel" customModule="RAWGCatalog" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="249" width="382" height="24"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="17"/>
+                                                <color key="textColor" name="ColorTextAdaptive"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YWD-KC-Jac">
+                                                <rect key="frame" x="96" y="277" width="222" height="70"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="Mad-Nh-qzb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="222" height="50"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last modified:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pnj-is-vca" customClass="CustomLabel" customModule="RAWGCatalog" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="83.5" height="50"/>
+                                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                                                <color key="textColor" name="ColorTextDarkGrayAdaptive"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                                        <integer key="value" value="2"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-- --- ----, --:--" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mbm-Ry-pDS" customClass="CustomLabel" customModule="RAWGCatalog" customModuleProvider="target">
+                                                                <rect key="frame" x="87.5" y="0.0" width="134.5" height="50"/>
+                                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                                                <color key="textColor" name="ColorTextDarkGrayAdaptive"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                                        <integer key="value" value="2"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="Pnj-is-vca" firstAttribute="top" secondItem="Mad-Nh-qzb" secondAttribute="top" id="KVg-Oa-qbx"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Pnj-is-vca" secondAttribute="bottom" id="UQV-eb-wm9"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Mbm-Ry-pDS" secondAttribute="bottom" id="bXA-Yh-SCR"/>
+                                                            <constraint firstItem="Mbm-Ry-pDS" firstAttribute="top" secondItem="Mad-Nh-qzb" secondAttribute="top" id="iJD-Qh-vbx"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Mbm-Ry-pDS" secondAttribute="trailing" id="rab-dZ-6MJ"/>
+                                                            <constraint firstItem="Pnj-is-vca" firstAttribute="leading" secondItem="Mad-Nh-qzb" secondAttribute="leading" id="rgw-gn-Qh8"/>
+                                                            <constraint firstItem="Mbm-Ry-pDS" firstAttribute="leading" secondItem="Pnj-is-vca" secondAttribute="trailing" constant="4" id="sxg-iZ-ihI"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Exceptional " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5K-ep-CYs" customClass="CustomLabel" customModule="RAWGCatalog" customModuleProvider="target">
+                                                        <rect key="frame" x="68.5" y="50" width="85" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                                                        <color key="textColor" name="ColorTextAdaptive"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                                <integer key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAo-yq-fPF" customClass="CustomLabel" customModule="RAWGCatalog" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="363" width="382" height="17"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                                <color key="textColor" name="ColorTextDarkGrayAdaptive"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRX-z9-cJu" customClass="CustomLabel" customModule="RAWGCatalog" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="384" width="382" height="17"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                                <color key="textColor" name="ColorTextAdaptive"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ELt-JO-Fkx">
+                                                <rect key="frame" x="16" y="417" width="382" height="36"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="UlZ-Vh-buu">
+                                                        <rect key="frame" x="0.0" y="0.0" width="183" height="36"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILr-CQ-tt5" customClass="CustomLabel" customModule="RAWGCatalog" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="183" height="17"/>
+                                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                                                <color key="textColor" name="ColorTextDarkGrayAdaptive"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                                        <integer key="value" value="2"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-- ---- ----" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UU2-7k-8ye" customClass="CustomLabel" customModule="RAWGCatalog" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="19" width="183" height="17"/>
+                                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                                                <color key="textColor" name="ColorTextAdaptive"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                                        <integer key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="5Pa-J1-yYO">
+                                                        <rect key="frame" x="199" y="0.0" width="183" height="36"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9F-xo-7NQ" customClass="CustomLabel" customModule="RAWGCatalog" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="183" height="17"/>
+                                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                                                <color key="textColor" name="ColorTextDarkGrayAdaptive"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                                        <integer key="value" value="2"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not rated" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ems-sC-vHD" customClass="CustomLabel" customModule="RAWGCatalog" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="19" width="183" height="17"/>
+                                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                                                <color key="textColor" name="ColorTextAdaptive"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                                        <integer key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="D9H-Ko-adS">
+                                                <rect key="frame" x="16" y="469" width="382" height="36"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="r4n-wD-lTT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="183" height="36"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average playtime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJC-gh-ExV" customClass="CustomLabel" customModule="RAWGCatalog" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="183" height="17"/>
+                                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                                                <color key="textColor" name="ColorTextDarkGrayAdaptive"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                                        <integer key="value" value="2"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejs-Pi-17G" customClass="CustomLabel" customModule="RAWGCatalog" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="19" width="183" height="17"/>
+                                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                                                <color key="textColor" name="ColorTextAdaptive"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                                        <integer key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="1Yk-AG-KF2">
+                                                        <rect key="frame" x="199" y="0.0" width="183" height="36"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Metacritic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJN-ag-h0n" customClass="CustomLabel" customModule="RAWGCatalog" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="183" height="17"/>
+                                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                                                <color key="textColor" name="ColorTextDarkGrayAdaptive"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                                        <integer key="value" value="2"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not rated" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOU-L8-gj1" customClass="CustomLabel" customModule="RAWGCatalog" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="19" width="183" height="17"/>
+                                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                                                <color key="textColor" name="ColorTextAdaptive"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                                        <integer key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="36k-RK-4oU">
+                                                <rect key="frame" x="16" y="521" width="382" height="36"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="rOY-qv-LKV">
+                                                        <rect key="frame" x="0.0" y="0.0" width="183" height="36"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Platform" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxy-fy-NpR" customClass="CustomLabel" customModule="RAWGCatalog" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="183" height="17"/>
+                                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                                                <color key="textColor" name="ColorTextDarkGrayAdaptive"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                                        <integer key="value" value="2"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNX-Yh-v0Y" customClass="CustomLabel" customModule="RAWGCatalog" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="19" width="183" height="17"/>
+                                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                                                <color key="textColor" name="ColorTextAdaptive"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                                        <integer key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="o9m-bL-Qab">
+                                                        <rect key="frame" x="199" y="0.0" width="183" height="36"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xd-bs-e9b" customClass="CustomLabel" customModule="RAWGCatalog" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="183" height="17"/>
+                                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                                                <color key="textColor" name="ColorTextDarkGrayAdaptive"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                                        <integer key="value" value="2"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDP-p2-BPH" customClass="CustomLabel" customModule="RAWGCatalog" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="19" width="183" height="17"/>
+                                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                                                <color key="textColor" name="ColorTextAdaptive"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                                        <integer key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where to buy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxA-6S-JZJ" customClass="CustomLabel" customModule="RAWGCatalog" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="573" width="382" height="17"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                                <color key="textColor" name="ColorTextDarkGrayAdaptive"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAy-xr-PMH" customClass="CustomLabel" customModule="RAWGCatalog" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="594" width="382" height="17"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                                <color key="textColor" name="ColorTextAdaptive"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="ColorBackgroundAdaptive"/>
+                                        <constraints>
+                                            <constraint firstItem="36k-RK-4oU" firstAttribute="top" secondItem="D9H-Ko-adS" secondAttribute="bottom" constant="16" id="13U-hE-C8R"/>
+                                            <constraint firstItem="YWD-KC-Jac" firstAttribute="centerX" secondItem="lwE-Dm-bOH" secondAttribute="centerX" id="3hb-dG-nYV"/>
+                                            <constraint firstItem="YWD-KC-Jac" firstAttribute="top" secondItem="QQh-5o-cY6" secondAttribute="bottom" constant="4" id="40J-6y-KYq"/>
+                                            <constraint firstItem="ELt-JO-Fkx" firstAttribute="top" secondItem="HRX-z9-cJu" secondAttribute="bottom" constant="16" id="4Ve-qt-gSS"/>
+                                            <constraint firstItem="yxA-6S-JZJ" firstAttribute="top" secondItem="36k-RK-4oU" secondAttribute="bottom" constant="16" id="7g9-vZ-Vi5"/>
+                                            <constraint firstItem="36k-RK-4oU" firstAttribute="leading" secondItem="lwE-Dm-bOH" secondAttribute="leading" constant="16" id="7lI-Fl-WP9"/>
+                                            <constraint firstItem="QQh-5o-cY6" firstAttribute="top" secondItem="oCU-lC-Sm6" secondAttribute="bottom" constant="16" id="9Pk-SJ-okJ"/>
+                                            <constraint firstItem="oCU-lC-Sm6" firstAttribute="top" secondItem="lwE-Dm-bOH" secondAttribute="top" id="BgL-bP-hsN"/>
+                                            <constraint firstItem="iAy-xr-PMH" firstAttribute="top" secondItem="yxA-6S-JZJ" secondAttribute="bottom" constant="4" id="ECQ-ez-bBI"/>
+                                            <constraint firstItem="QQh-5o-cY6" firstAttribute="leading" secondItem="lwE-Dm-bOH" secondAttribute="leading" constant="16" id="EvE-Lk-tBS"/>
+                                            <constraint firstItem="yxA-6S-JZJ" firstAttribute="leading" secondItem="lwE-Dm-bOH" secondAttribute="leading" constant="16" id="Hw9-Ty-sIs"/>
+                                            <constraint firstAttribute="trailing" secondItem="ELt-JO-Fkx" secondAttribute="trailing" constant="16" id="JM9-aE-nYe"/>
+                                            <constraint firstItem="cAo-yq-fPF" firstAttribute="leading" secondItem="lwE-Dm-bOH" secondAttribute="leading" constant="16" id="JPH-qf-MJl"/>
+                                            <constraint firstAttribute="trailing" secondItem="iAy-xr-PMH" secondAttribute="trailing" constant="16" id="O3h-HK-Dbz"/>
+                                            <constraint firstItem="YWD-KC-Jac" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lwE-Dm-bOH" secondAttribute="leading" constant="16" id="Piq-My-sTG"/>
+                                            <constraint firstAttribute="trailing" secondItem="36k-RK-4oU" secondAttribute="trailing" constant="16" id="Xg0-2g-xzJ"/>
+                                            <constraint firstItem="cAo-yq-fPF" firstAttribute="top" secondItem="YWD-KC-Jac" secondAttribute="bottom" constant="16" id="Xhz-At-xpo"/>
+                                            <constraint firstAttribute="trailing" secondItem="oCU-lC-Sm6" secondAttribute="trailing" id="b4E-8G-HYB"/>
+                                            <constraint firstItem="D9H-Ko-adS" firstAttribute="top" secondItem="ELt-JO-Fkx" secondAttribute="bottom" constant="16" id="bu0-7b-crx"/>
+                                            <constraint firstAttribute="trailing" secondItem="HRX-z9-cJu" secondAttribute="trailing" constant="16" id="c2W-xA-fLG"/>
+                                            <constraint firstItem="D9H-Ko-adS" firstAttribute="leading" secondItem="lwE-Dm-bOH" secondAttribute="leading" constant="16" id="dcB-st-nqD"/>
+                                            <constraint firstItem="HRX-z9-cJu" firstAttribute="leading" secondItem="lwE-Dm-bOH" secondAttribute="leading" constant="16" id="fCr-SS-Ds1"/>
+                                            <constraint firstItem="oCU-lC-Sm6" firstAttribute="leading" secondItem="lwE-Dm-bOH" secondAttribute="leading" id="g75-gh-Ij1"/>
+                                            <constraint firstAttribute="trailing" secondItem="QQh-5o-cY6" secondAttribute="trailing" constant="16" id="h6H-YE-t9X"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="iAy-xr-PMH" secondAttribute="bottom" constant="32" id="hd1-Sx-JLp"/>
+                                            <constraint firstAttribute="trailing" secondItem="yxA-6S-JZJ" secondAttribute="trailing" constant="16" id="jsX-SU-L4C"/>
+                                            <constraint firstAttribute="trailing" secondItem="D9H-Ko-adS" secondAttribute="trailing" constant="16" id="nou-bA-WI1"/>
+                                            <constraint firstItem="HRX-z9-cJu" firstAttribute="top" secondItem="cAo-yq-fPF" secondAttribute="bottom" constant="4" id="tSB-Xj-Y86"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YWD-KC-Jac" secondAttribute="trailing" constant="16" id="tt7-d5-T0k"/>
+                                            <constraint firstItem="iAy-xr-PMH" firstAttribute="leading" secondItem="lwE-Dm-bOH" secondAttribute="leading" constant="16" id="upJ-6b-Cb6"/>
+                                            <constraint firstAttribute="trailing" secondItem="cAo-yq-fPF" secondAttribute="trailing" constant="16" id="w3s-6V-TXH"/>
+                                            <constraint firstItem="ELt-JO-Fkx" firstAttribute="leading" secondItem="lwE-Dm-bOH" secondAttribute="leading" constant="16" id="yc6-ru-xs0"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="ColorBackgroundAdaptive"/>
+                                <constraints>
+                                    <constraint firstItem="lwE-Dm-bOH" firstAttribute="leading" secondItem="qeD-j4-7mJ" secondAttribute="leading" id="U9O-FD-VIO"/>
+                                    <constraint firstItem="lwE-Dm-bOH" firstAttribute="width" secondItem="qeD-j4-7mJ" secondAttribute="width" id="erd-Fp-hgR"/>
+                                    <constraint firstItem="lwE-Dm-bOH" firstAttribute="height" secondItem="qeD-j4-7mJ" secondAttribute="height" priority="250" id="fOG-sh-XKA"/>
+                                    <constraint firstAttribute="bottom" secondItem="lwE-Dm-bOH" secondAttribute="bottom" id="hPy-th-T72"/>
+                                    <constraint firstAttribute="trailing" secondItem="lwE-Dm-bOH" secondAttribute="trailing" id="pzx-LK-7sj"/>
+                                    <constraint firstItem="lwE-Dm-bOH" firstAttribute="top" secondItem="qeD-j4-7mJ" secondAttribute="top" id="rCU-xm-Lie"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4zg-n4-PdP"/>
+                        <color key="backgroundColor" name="ColorBackgroundAdaptive"/>
+                        <constraints>
+                            <constraint firstItem="qeD-j4-7mJ" firstAttribute="top" secondItem="4zg-n4-PdP" secondAttribute="top" id="AOd-tB-BAA"/>
+                            <constraint firstItem="qeD-j4-7mJ" firstAttribute="leading" secondItem="4zg-n4-PdP" secondAttribute="leading" id="V0d-5q-ZPD"/>
+                            <constraint firstItem="qeD-j4-7mJ" firstAttribute="trailing" secondItem="4zg-n4-PdP" secondAttribute="trailing" id="bXH-fV-hzN"/>
+                            <constraint firstItem="qeD-j4-7mJ" firstAttribute="bottom" secondItem="4zg-n4-PdP" secondAttribute="bottom" id="lVo-vP-PGl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Game Detail" id="Krt-Qn-nfT">
+                        <barButtonItem key="leftBarButtonItem" image="ic_back" id="Ghv-Qr-Q5f">
+                            <connections>
+                                <action selector="backBtnAction:" destination="qM1-Eg-5kW" id="rYG-jW-zSY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="averagePlaytimeLbl" destination="ejs-Pi-17G" id="gLe-af-Szp"/>
+                        <outlet property="backgroundImg" destination="oCU-lC-Sm6" id="ARV-K8-9qu"/>
+                        <outlet property="contentVw" destination="lwE-Dm-bOH" id="jHT-24-KEr"/>
+                        <outlet property="descLbl" destination="HRX-z9-cJu" id="Pxa-Gb-3t1"/>
+                        <outlet property="genreLbl" destination="MDP-p2-BPH" id="izH-kn-lxj"/>
+                        <outlet property="metacriticLbl" destination="jOU-L8-gj1" id="Fs4-RC-LXw"/>
+                        <outlet property="modifiedLbl" destination="Mbm-Ry-pDS" id="3ff-Kg-Mmx"/>
+                        <outlet property="nameLbl" destination="QQh-5o-cY6" id="NSE-LF-flv"/>
+                        <outlet property="platformLbl" destination="lNX-Yh-v0Y" id="oll-bW-Fwc"/>
+                        <outlet property="ratingCategoryLbl" destination="v5K-ep-CYs" id="zE2-s7-j0t"/>
+                        <outlet property="ratingLbl" destination="Ems-sC-vHD" id="Uak-F8-741"/>
+                        <outlet property="releaseLbl" destination="UU2-7k-8ye" id="Rxj-6Z-Qaw"/>
+                        <outlet property="scrollVw" destination="qeD-j4-7mJ" id="P0v-xu-gvw"/>
+                        <outlet property="storeLbl" destination="iAy-xr-PMH" id="an5-Jk-hKV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dhH-rP-9kT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9048" y="131"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_back" width="24" height="24"/>
+        <namedColor name="ColorBackgroundAdaptive">
+            <color red="0.93300002813339233" green="0.93300002813339233" blue="0.93300002813339233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ColorTextAdaptive">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ColorTextDarkGrayAdaptive">
+            <color white="0.33300000429153442" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+    </resources>
+</document>

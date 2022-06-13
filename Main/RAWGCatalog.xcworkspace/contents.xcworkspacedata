@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:RAWGCatalog.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Modules/AboutModule/AboutModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Modules/GameModule/GameModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Modules/GenreModule/GenreModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Modules/StoreModule/StoreModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

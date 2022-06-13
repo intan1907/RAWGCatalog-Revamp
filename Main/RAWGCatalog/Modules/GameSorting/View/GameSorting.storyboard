@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xzd-W2-WxN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Games Sorting Option-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="GameSortingVC" customModule="RAWGCatalog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ra-Qa-yCJ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yqG-h9-89t">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                        <subviews>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Uoi-hy-sxC" customClass="DynamicTableView" customModule="RAWGCatalog" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="670"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </tableView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lab-hd-Bya" customClass="CustomButton" customModule="RAWGCatalog" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="702" width="382" height="56"/>
+                                                <color key="backgroundColor" name="ColorGrayTransparentAdaptive"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="56" id="1k7-pK-E9V"/>
+                                                </constraints>
+                                                <color key="tintColor" name="ColorTextAdaptive"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Apply">
+                                                    <fontDescription key="titleFontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="14"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="applyBtnAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="lHt-MA-bB3"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Lab-hd-Bya" secondAttribute="trailing" constant="16" id="1PJ-8S-Fic"/>
+                                            <constraint firstAttribute="trailing" secondItem="Uoi-hy-sxC" secondAttribute="trailing" id="6Fp-Qg-Iyz"/>
+                                            <constraint firstItem="Lab-hd-Bya" firstAttribute="top" secondItem="Uoi-hy-sxC" secondAttribute="bottom" constant="32" id="JDR-dO-40K"/>
+                                            <constraint firstAttribute="bottom" secondItem="Lab-hd-Bya" secondAttribute="bottom" constant="16" id="MjR-Sf-ga1"/>
+                                            <constraint firstItem="Uoi-hy-sxC" firstAttribute="leading" secondItem="yqG-h9-89t" secondAttribute="leading" id="TCm-D6-HrT"/>
+                                            <constraint firstItem="Uoi-hy-sxC" firstAttribute="top" secondItem="yqG-h9-89t" secondAttribute="top" id="oFK-fB-GV6"/>
+                                            <constraint firstItem="Lab-hd-Bya" firstAttribute="leading" secondItem="yqG-h9-89t" secondAttribute="leading" constant="16" id="pUC-46-SyW"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="yqG-h9-89t" firstAttribute="leading" secondItem="6Ra-Qa-yCJ" secondAttribute="leading" id="DdA-ao-Pa4"/>
+                                    <constraint firstItem="yqG-h9-89t" firstAttribute="width" secondItem="6Ra-Qa-yCJ" secondAttribute="width" id="LKp-2K-Lpy"/>
+                                    <constraint firstAttribute="trailing" secondItem="yqG-h9-89t" secondAttribute="trailing" id="MS3-uz-Aak"/>
+                                    <constraint firstItem="yqG-h9-89t" firstAttribute="top" secondItem="6Ra-Qa-yCJ" secondAttribute="top" id="Wti-cq-K1t"/>
+                                    <constraint firstItem="yqG-h9-89t" firstAttribute="height" secondItem="6Ra-Qa-yCJ" secondAttribute="height" priority="250" id="bFy-TS-ezO"/>
+                                    <constraint firstAttribute="bottom" secondItem="yqG-h9-89t" secondAttribute="bottom" id="zMA-hd-z1O"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Ra-Qa-yCJ" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="VBu-fg-IxL"/>
+                            <constraint firstItem="6Ra-Qa-yCJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="VJN-fv-BRD"/>
+                            <constraint firstItem="6Ra-Qa-yCJ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="cNa-Ec-EPN"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="6Ra-Qa-yCJ" secondAttribute="trailing" id="f0I-YI-cwG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="6Ra-Qa-yCJ" secondAttribute="bottom" id="vfo-xn-p9K"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Games Sorting Option" id="WOY-ZD-tBi">
+                        <barButtonItem key="rightBarButtonItem" image="ic_close" id="QGX-1H-bWK">
+                            <connections>
+                                <action selector="closeBtnAction:" destination="Y6W-OH-hqX" id="3wl-xq-cc7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="applyBtn" destination="Lab-hd-Bya" id="Emx-PC-ygK"/>
+                        <outlet property="containerVw" destination="yqG-h9-89t" id="YDq-F4-z1B"/>
+                        <outlet property="scrollVw" destination="6Ra-Qa-yCJ" id="ZSC-Sq-v3b"/>
+                        <outlet property="tblVw" destination="Uoi-hy-sxC" id="xwo-6h-aKe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="886.95652173913049" y="30.803571428571427"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fSK-Cv-5dq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xzd-W2-WxN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1fH-RV-iuB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="h7G-oK-b9f"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8XF-99-eXL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="30.803571428571427"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_close" width="24" height="24"/>
+        <namedColor name="ColorGrayTransparentAdaptive">
+            <color red="0.81999999284744263" green="0.81999999284744263" blue="0.83499997854232788" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ColorTextAdaptive">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

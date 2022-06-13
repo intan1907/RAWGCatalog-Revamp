@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Bold.ttf">
+            <string>Poppins-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GenreHeaderView" id="5Et-ue-rDy" customClass="GenreHeaderView" customModule="RAWGCatalog" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aDH-dP-1cc">
+                    <rect key="frame" x="16" y="0.0" width="398" height="95"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genres" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1TO-9f-NgO" customClass="CustomLabel" customModule="RAWGCatalog" customModuleProvider="target">
+                            <rect key="frame" x="4" y="0.0" width="390" height="95"/>
+                            <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="16"/>
+                            <color key="textColor" name="ColorTextInvertedAdaptive"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="ColorBackgroundInvertedAdaptive"/>
+                    <constraints>
+                        <constraint firstItem="1TO-9f-NgO" firstAttribute="top" secondItem="aDH-dP-1cc" secondAttribute="top" id="EmI-d8-Dmz"/>
+                        <constraint firstItem="1TO-9f-NgO" firstAttribute="leading" secondItem="aDH-dP-1cc" secondAttribute="leading" constant="4" id="HmT-0J-Ee8"/>
+                        <constraint firstAttribute="bottom" secondItem="1TO-9f-NgO" secondAttribute="bottom" id="Kyu-37-LJZ"/>
+                        <constraint firstAttribute="trailing" secondItem="1TO-9f-NgO" secondAttribute="trailing" constant="4" id="ucH-p0-C5x"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="KnI-bn-Lpe"/>
+            <constraints>
+                <constraint firstItem="KnI-bn-Lpe" firstAttribute="trailing" secondItem="aDH-dP-1cc" secondAttribute="trailing" id="BKJ-Ab-fqe"/>
+                <constraint firstItem="aDH-dP-1cc" firstAttribute="top" secondItem="5Et-ue-rDy" secondAttribute="top" id="S3o-2v-1rA"/>
+                <constraint firstItem="aDH-dP-1cc" firstAttribute="leading" secondItem="KnI-bn-Lpe" secondAttribute="leading" constant="16" id="sQi-hQ-TCt"/>
+                <constraint firstItem="KnI-bn-Lpe" firstAttribute="bottom" secondItem="aDH-dP-1cc" secondAttribute="bottom" id="yTh-Pb-AYc"/>
+            </constraints>
+            <connections>
+                <outlet property="containerVw" destination="aDH-dP-1cc" id="7bw-tQ-Aar"/>
+                <outlet property="headerTitleLbl" destination="1TO-9f-NgO" id="oyb-3G-9AO"/>
+            </connections>
+            <point key="canvasLocation" x="11.594202898550726" y="5.6919642857142856"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <namedColor name="ColorBackgroundInvertedAdaptive">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ColorTextInvertedAdaptive">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

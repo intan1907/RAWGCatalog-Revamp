@@ -1,0 +1,110 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '14.2'
+
+workspace 'RAWGCatalog'
+
+use_frameworks!
+
+def core_pod
+  pod 'CoreModule', :git => 'https://github.com/intan1907/CoreModule.git', :tag => '1.0.8'
+end
+
+def locale_db_pod
+  pod 'RealmSwift', '~> 10.25.0'
+end
+
+def image_pod
+  pod 'SDWebImage'
+end
+
+def text_input_pod
+  pod 'MaterialComponents/TextControls+OutlinedTextFields'
+  pod 'MaterialComponents/TextControls+OutlinedTextAreas'
+end
+
+# remote network related
+def remote_network_pods
+  pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire.git', :tag => '5.6.1'
+  core_pod
+end
+
+# utility's pod
+def utils_pods
+  pod 'SwiftMessages'
+  pod 'UIColor_Hex_Swift'
+  image_pod
+  text_input_pod
+end
+
+# testing pod
+def testing_pods
+  pod 'Quick'
+  pod 'Nimble'
+  pod 'Legible', :git => 'https://github.com/sparta-science/Legible/'
+end
+
+# main app
+target 'RAWGCatalog' do
+  remote_network_pods
+  locale_db_pod
+  utils_pods
+  target 'RAWGCatalogTests' do
+    inherit! :search_paths
+    testing_pods
+  end
+end
+
+# modules
+target 'GameModule' do
+  project '../Modules/GameModule/GameModule'
+  remote_network_pods
+  locale_db_pod
+
+  target 'GameModuleTests' do
+    inherit! :complete
+    testing_pods
+  end
+end
+
+target 'AboutModule' do
+  project '../Modules/AboutModule/AboutModule'
+  core_pod
+
+  target 'AboutModuleTests' do
+    inherit! :complete
+    testing_pods
+  end
+end
+
+target 'GenreModule' do
+  project '../Modules/GenreModule/GenreModule'
+  remote_network_pods
+  
+  target 'GenreModuleTests' do
+    inherit! :complete
+    testing_pods
+  end
+end
+
+target 'StoreModule' do
+  project '../Modules/StoreModule/StoreModule'
+  remote_network_pods
+
+  target 'StoreModuleTests' do
+    inherit! :complete
+    testing_pods
+  end
+end
+
+ios14 = ['CoreModule', 'Legible']
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      if ios14.include?(target.name)
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '14.2'
+      else 
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+      end
+    end
+  end
+end

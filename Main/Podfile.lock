@@ -1,0 +1,124 @@
+PODS:
+  - Alamofire (5.6.1)
+  - CoreModule (1.0.8):
+    - Alamofire (= 5.6.1)
+    - RealmSwift (~> 10.25.0)
+  - Legible (0.2.0):
+    - Nimble (~> 9.0)
+    - Quick (~> 5.0)
+  - MaterialComponents/AnimationTiming (124.2.0)
+  - MaterialComponents/Availability (124.2.0)
+  - MaterialComponents/private/Math (124.2.0)
+  - "MaterialComponents/private/TextControlsPrivate+BaseStyle (124.2.0)":
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/private/Math
+    - "MaterialComponents/private/TextControlsPrivate+Shared"
+  - "MaterialComponents/private/TextControlsPrivate+OutlinedStyle (124.2.0)":
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Math
+    - "MaterialComponents/private/TextControlsPrivate+Shared"
+  - "MaterialComponents/private/TextControlsPrivate+Shared (124.2.0)":
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/private/Math
+    - "MaterialComponents/TextControls+Enums"
+  - "MaterialComponents/private/TextControlsPrivate+TextFields (124.2.0)":
+    - MaterialComponents/private/Math
+    - "MaterialComponents/private/TextControlsPrivate+Shared"
+  - "MaterialComponents/TextControls+BaseTextAreas (124.2.0)":
+    - "MaterialComponents/private/TextControlsPrivate+BaseStyle"
+    - "MaterialComponents/private/TextControlsPrivate+Shared"
+    - MDFInternationalization
+  - "MaterialComponents/TextControls+BaseTextFields (124.2.0)":
+    - "MaterialComponents/private/TextControlsPrivate+BaseStyle"
+    - "MaterialComponents/private/TextControlsPrivate+Shared"
+    - "MaterialComponents/private/TextControlsPrivate+TextFields"
+    - MDFInternationalization
+  - "MaterialComponents/TextControls+Enums (124.2.0)"
+  - "MaterialComponents/TextControls+OutlinedTextAreas (124.2.0)":
+    - MaterialComponents/Availability
+    - "MaterialComponents/private/TextControlsPrivate+OutlinedStyle"
+    - "MaterialComponents/TextControls+BaseTextAreas"
+  - "MaterialComponents/TextControls+OutlinedTextFields (124.2.0)":
+    - MaterialComponents/Availability
+    - "MaterialComponents/private/TextControlsPrivate+OutlinedStyle"
+    - "MaterialComponents/TextControls+BaseTextFields"
+  - MDFInternationalization (3.0.0)
+  - Nimble (9.2.1)
+  - Quick (5.0.1)
+  - Realm (10.25.2):
+    - Realm/Headers (= 10.25.2)
+  - Realm/Headers (10.25.2)
+  - RealmSwift (10.25.2):
+    - Realm (= 10.25.2)
+  - SDWebImage (5.12.5):
+    - SDWebImage/Core (= 5.12.5)
+  - SDWebImage/Core (5.12.5)
+  - SwiftMessages (9.0.6):
+    - SwiftMessages/App (= 9.0.6)
+  - SwiftMessages/App (9.0.6)
+  - UIColor_Hex_Swift (5.1.7)
+
+DEPENDENCIES:
+  - Alamofire (from `https://github.com/Alamofire/Alamofire.git`, tag `5.6.1`)
+  - CoreModule (from `https://github.com/intan1907/CoreModule.git`, tag `1.0.8`)
+  - Legible (from `https://github.com/sparta-science/Legible/`)
+  - "MaterialComponents/TextControls+OutlinedTextAreas"
+  - "MaterialComponents/TextControls+OutlinedTextFields"
+  - Nimble
+  - Quick
+  - RealmSwift (~> 10.25.0)
+  - SDWebImage
+  - SwiftMessages
+  - UIColor_Hex_Swift
+
+SPEC REPOS:
+  trunk:
+    - MaterialComponents
+    - MDFInternationalization
+    - Nimble
+    - Quick
+    - Realm
+    - RealmSwift
+    - SDWebImage
+    - SwiftMessages
+    - UIColor_Hex_Swift
+
+EXTERNAL SOURCES:
+  Alamofire:
+    :git: https://github.com/Alamofire/Alamofire.git
+    :tag: 5.6.1
+  CoreModule:
+    :git: https://github.com/intan1907/CoreModule.git
+    :tag: 1.0.8
+  Legible:
+    :git: https://github.com/sparta-science/Legible/
+
+CHECKOUT OPTIONS:
+  Alamofire:
+    :git: https://github.com/Alamofire/Alamofire.git
+    :tag: 5.6.1
+  CoreModule:
+    :git: https://github.com/intan1907/CoreModule.git
+    :tag: 1.0.8
+  Legible:
+    :commit: 6eb2d49b59aa50dfa1dd64b027a7eee805070bcb
+    :git: https://github.com/sparta-science/Legible/
+
+SPEC CHECKSUMS:
+  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  CoreModule: 42f9194bc41e7863a2c63606b97f6f30282a0d07
+  Legible: 64cf83cec214790a811f8c69cfbb46473fa1675e
+  MaterialComponents: 1a9b2d9d45b1601ae544de85089adc4c464306d4
+  MDFInternationalization: d697c55307816222a55685c4ccb1044ffb030c12
+  Nimble: e7e615c0335ee4bf5b0d786685451e62746117d5
+  Quick: 749aa754fd1e7d984f2000fe051e18a3a9809179
+  Realm: 978303663d0509166498f423d112e5ee97d4c91b
+  RealmSwift: a0c30c1efc49e928a0a6f8fb141bb2629616d79b
+  SDWebImage: 0905f1b7760fc8ac4198cae0036600d67478751e
+  SwiftMessages: f0c7ef4705a570ad6c5e208b611f4333e660ed92
+  UIColor_Hex_Swift: 31cd3e47440f07a20d2503a36bb0437a445b3c29
+
+PODFILE CHECKSUM: b3c4e14e1545f4ad07f974c9a71f46834f853199
+
+COCOAPODS: 1.11.0.beta.2

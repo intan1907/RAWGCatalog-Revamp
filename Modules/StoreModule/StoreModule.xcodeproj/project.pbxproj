@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D9DFD9E2AC20405C92A7BA9E /* Pods_StoreModule_StoreModuleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10AC5A8F77CBA566F23296E0 /* Pods_StoreModule_StoreModuleTests.framework */; };
+		DF588C5607D3B2C5319FB888 /* Pods_StoreModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043A6E8AC95890A32227C3C8 /* Pods_StoreModule.framework */; };
+		EF2BE25A284723B900A29197 /* GetStoresRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BE259284723B900A29197 /* GetStoresRepository.swift */; };
+		EF2BE25E284723C600A29197 /* DAOStoresBaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BE25C284723C600A29197 /* DAOStoresBaseClass.swift */; };
+		EF2BE25F284723C600A29197 /* DAOStoresResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BE25D284723C600A29197 /* DAOStoresResults.swift */; };
+		EF2BE261284723D700A29197 /* GetStoresRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BE260284723D700A29197 /* GetStoresRemoteDataSource.swift */; };
+		EF2BE2642847241B00A29197 /* StoreAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BE2632847241B00A29197 /* StoreAPIService.swift */; };
+		EF2BE266284726F400A29197 /* StoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BE265284726F400A29197 /* StoreModel.swift */; };
+		EF2BE26B284727CE00A29197 /* StoreDetailTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BE269284727CE00A29197 /* StoreDetailTransformer.swift */; };
+		EF2BE26C284727CE00A29197 /* StoresTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BE26A284727CE00A29197 /* StoresTransformer.swift */; };
+		EF64AB8D2851D87B004ADEF3 /* StoreModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF84481A2825258C00F00D1A /* StoreModule.framework */; };
+		EF64AB942851D8E9004ADEF3 /* GetStoresUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF64AB932851D8E9004ADEF3 /* GetStoresUseCaseSpec.swift */; };
+		EF64AB9B2851DA23004ADEF3 /* Stores.json in Resources */ = {isa = PBXBuildFile; fileRef = EF64AB9A2851DA23004ADEF3 /* Stores.json */; };
+		EF64AB9D2851DA33004ADEF3 /* StoreDetail.json in Resources */ = {isa = PBXBuildFile; fileRef = EF64AB9C2851DA33004ADEF3 /* StoreDetail.json */; };
+		EF64AB9F2851DA44004ADEF3 /* StoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF64AB9E2851DA44004ADEF3 /* StoreData.swift */; };
+		EF64ABA12851DB5F004ADEF3 /* MockGetStoresRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF64ABA02851DB5F004ADEF3 /* MockGetStoresRemoteDataSource.swift */; };
+		EF64ABA32851E060004ADEF3 /* MockGetStoreDetailRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF64ABA22851E060004ADEF3 /* MockGetStoreDetailRemoteDataSource.swift */; };
+		EF64ABA52851E102004ADEF3 /* GetStoreDetailUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF64ABA42851E102004ADEF3 /* GetStoreDetailUseCaseSpec.swift */; };
+		EF84481E2825258C00F00D1A /* StoreModule.h in Headers */ = {isa = PBXBuildFile; fileRef = EF84481D2825258C00F00D1A /* StoreModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF84483A282526A200F00D1A /* GetStoreDetailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF844827282526A200F00D1A /* GetStoreDetailRepository.swift */; };
+		EF84483D282526A200F00D1A /* DAOStoreDetailBaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF84482D282526A200F00D1A /* DAOStoreDetailBaseClass.swift */; };
+		EF844840282526A200F00D1A /* GetStoreDetailRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF844831282526A200F00D1A /* GetStoreDetailRemoteDataSource.swift */; };
+		EF844842282526A200F00D1A /* StoreDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF844836282526A200F00D1A /* StoreDetailModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF64AB8E2851D87B004ADEF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF8448112825258C00F00D1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF8448192825258C00F00D1A;
+			remoteInfo = StoreModule;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		043A6E8AC95890A32227C3C8 /* Pods_StoreModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StoreModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10AC5A8F77CBA566F23296E0 /* Pods_StoreModule_StoreModuleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StoreModule_StoreModuleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		534C030DB0C3D1F82220A463 /* Pods-StoreModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreModule.debug.xcconfig"; path = "../../Main/Pods/Target Support Files/Pods-StoreModule/Pods-StoreModule.debug.xcconfig"; sourceTree = "<group>"; };
+		6022E59AD7D68351B1F2DDCE /* Pods-StoreModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreModule.release.xcconfig"; path = "../../Main/Pods/Target Support Files/Pods-StoreModule/Pods-StoreModule.release.xcconfig"; sourceTree = "<group>"; };
+		798C84F1852B0ECF2FA396D2 /* Pods-StoreModule-StoreModuleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreModule-StoreModuleTests.release.xcconfig"; path = "../../Main/Pods/Target Support Files/Pods-StoreModule-StoreModuleTests/Pods-StoreModule-StoreModuleTests.release.xcconfig"; sourceTree = "<group>"; };
+		C85049B9B3CCA0DDF68DF1D8 /* Pods-StoreModule-StoreModuleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreModule-StoreModuleTests.debug.xcconfig"; path = "../../Main/Pods/Target Support Files/Pods-StoreModule-StoreModuleTests/Pods-StoreModule-StoreModuleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EF2BE259284723B900A29197 /* GetStoresRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetStoresRepository.swift; sourceTree = "<group>"; };
+		EF2BE25C284723C600A29197 /* DAOStoresBaseClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAOStoresBaseClass.swift; sourceTree = "<group>"; };
+		EF2BE25D284723C600A29197 /* DAOStoresResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAOStoresResults.swift; sourceTree = "<group>"; };
+		EF2BE260284723D700A29197 /* GetStoresRemoteDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetStoresRemoteDataSource.swift; sourceTree = "<group>"; };
+		EF2BE2632847241B00A29197 /* StoreAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreAPIService.swift; sourceTree = "<group>"; };
+		EF2BE265284726F400A29197 /* StoreModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreModel.swift; sourceTree = "<group>"; };
+		EF2BE269284727CE00A29197 /* StoreDetailTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreDetailTransformer.swift; sourceTree = "<group>"; };
+		EF2BE26A284727CE00A29197 /* StoresTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoresTransformer.swift; sourceTree = "<group>"; };
+		EF64AB892851D87B004ADEF3 /* StoreModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoreModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF64AB932851D8E9004ADEF3 /* GetStoresUseCaseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStoresUseCaseSpec.swift; sourceTree = "<group>"; };
+		EF64AB9A2851DA23004ADEF3 /* Stores.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Stores.json; sourceTree = "<group>"; };
+		EF64AB9C2851DA33004ADEF3 /* StoreDetail.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = StoreDetail.json; sourceTree = "<group>"; };
+		EF64AB9E2851DA44004ADEF3 /* StoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreData.swift; sourceTree = "<group>"; };
+		EF64ABA02851DB5F004ADEF3 /* MockGetStoresRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGetStoresRemoteDataSource.swift; sourceTree = "<group>"; };
+		EF64ABA22851E060004ADEF3 /* MockGetStoreDetailRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGetStoreDetailRemoteDataSource.swift; sourceTree = "<group>"; };
+		EF64ABA42851E102004ADEF3 /* GetStoreDetailUseCaseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStoreDetailUseCaseSpec.swift; sourceTree = "<group>"; };
+		EF84481A2825258C00F00D1A /* StoreModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StoreModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF84481D2825258C00F00D1A /* StoreModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreModule.h; sourceTree = "<group>"; };
+		EF844827282526A200F00D1A /* GetStoreDetailRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetStoreDetailRepository.swift; sourceTree = "<group>"; };
+		EF84482D282526A200F00D1A /* DAOStoreDetailBaseClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAOStoreDetailBaseClass.swift; sourceTree = "<group>"; };
+		EF844831282526A200F00D1A /* GetStoreDetailRemoteDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetStoreDetailRemoteDataSource.swift; sourceTree = "<group>"; };
+		EF844836282526A200F00D1A /* StoreDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreDetailModel.swift; sourceTree = "<group>"; };
+		EFBA17DB283793AC00342972 /* CommonModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CommonModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFBA17DF283793B200342972 /* NetworkModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF64AB862851D87B004ADEF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF64AB8D2851D87B004ADEF3 /* StoreModule.framework in Frameworks */,
+				D9DFD9E2AC20405C92A7BA9E /* Pods_StoreModule_StoreModuleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF8448172825258C00F00D1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF588C5607D3B2C5319FB888 /* Pods_StoreModule.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD20051DEF18501E47E0AA53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFBA17DF283793B200342972 /* NetworkModule.framework */,
+				EFBA17DB283793AC00342972 /* CommonModule.framework */,
+				043A6E8AC95890A32227C3C8 /* Pods_StoreModule.framework */,
+				10AC5A8F77CBA566F23296E0 /* Pods_StoreModule_StoreModuleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C503724EF0E196D40513EB6B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				534C030DB0C3D1F82220A463 /* Pods-StoreModule.debug.xcconfig */,
+				6022E59AD7D68351B1F2DDCE /* Pods-StoreModule.release.xcconfig */,
+				C85049B9B3CCA0DDF68DF1D8 /* Pods-StoreModule-StoreModuleTests.debug.xcconfig */,
+				798C84F1852B0ECF2FA396D2 /* Pods-StoreModule-StoreModuleTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = "../../rawgcatalog-main/Pods";
+			sourceTree = "<group>";
+		};
+		EF2BE25B284723C600A29197 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BE25C284723C600A29197 /* DAOStoresBaseClass.swift */,
+				EF2BE25D284723C600A29197 /* DAOStoresResults.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		EF2BE2622847241B00A29197 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BE2632847241B00A29197 /* StoreAPIService.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		EF2BE267284727CE00A29197 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BE268284727CE00A29197 /* Mapper */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EF2BE268284727CE00A29197 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BE269284727CE00A29197 /* StoreDetailTransformer.swift */,
+				EF2BE26A284727CE00A29197 /* StoresTransformer.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		EF64AB8A2851D87B004ADEF3 /* StoreModuleTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF64AB952851D9C1004ADEF3 /* Helpers */,
+				EF64AB932851D8E9004ADEF3 /* GetStoresUseCaseSpec.swift */,
+				EF64ABA42851E102004ADEF3 /* GetStoreDetailUseCaseSpec.swift */,
+			);
+			path = StoreModuleTests;
+			sourceTree = "<group>";
+		};
+		EF64AB952851D9C1004ADEF3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EF64AB962851D9CB004ADEF3 /* Data */,
+				EF64ABA02851DB5F004ADEF3 /* MockGetStoresRemoteDataSource.swift */,
+				EF64ABA22851E060004ADEF3 /* MockGetStoreDetailRemoteDataSource.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EF64AB962851D9CB004ADEF3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				EF64AB9A2851DA23004ADEF3 /* Stores.json */,
+				EF64AB9C2851DA33004ADEF3 /* StoreDetail.json */,
+				EF64AB9E2851DA44004ADEF3 /* StoreData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		EF8448102825258C00F00D1A = {
+			isa = PBXGroup;
+			children = (
+				EF84481C2825258C00F00D1A /* StoreModule */,
+				EF64AB8A2851D87B004ADEF3 /* StoreModuleTests */,
+				EF84481B2825258C00F00D1A /* Products */,
+				C503724EF0E196D40513EB6B /* Pods */,
+				AD20051DEF18501E47E0AA53 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EF84481B2825258C00F00D1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF84481A2825258C00F00D1A /* StoreModule.framework */,
+				EF64AB892851D87B004ADEF3 /* StoreModuleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF84481C2825258C00F00D1A /* StoreModule */ = {
+			isa = PBXGroup;
+			children = (
+				EF844826282526A200F00D1A /* Data */,
+				EF844834282526A200F00D1A /* Domain */,
+				EF2BE267284727CE00A29197 /* Utils */,
+				EF84481D2825258C00F00D1A /* StoreModule.h */,
+			);
+			path = StoreModule;
+			sourceTree = "<group>";
+		};
+		EF844826282526A200F00D1A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BE259284723B900A29197 /* GetStoresRepository.swift */,
+				EF844827282526A200F00D1A /* GetStoreDetailRepository.swift */,
+				EF844829282526A200F00D1A /* Remote */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		EF844829282526A200F00D1A /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BE2622847241B00A29197 /* Request */,
+				EF84482B282526A200F00D1A /* Response */,
+				EF2BE260284723D700A29197 /* GetStoresRemoteDataSource.swift */,
+				EF844831282526A200F00D1A /* GetStoreDetailRemoteDataSource.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		EF84482B282526A200F00D1A /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BE25B284723C600A29197 /* Stores */,
+				EF84482C282526A200F00D1A /* StoreDetail */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		EF84482C282526A200F00D1A /* StoreDetail */ = {
+			isa = PBXGroup;
+			children = (
+				EF84482D282526A200F00D1A /* DAOStoreDetailBaseClass.swift */,
+			);
+			path = StoreDetail;
+			sourceTree = "<group>";
+		};
+		EF844834282526A200F00D1A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				EF844835282526A200F00D1A /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		EF844835282526A200F00D1A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BE265284726F400A29197 /* StoreModel.swift */,
+				EF844836282526A200F00D1A /* StoreDetailModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EF8448152825258C00F00D1A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF84481E2825258C00F00D1A /* StoreModule.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		EF64AB882851D87B004ADEF3 /* StoreModuleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF64AB922851D87B004ADEF3 /* Build configuration list for PBXNativeTarget "StoreModuleTests" */;
+			buildPhases = (
+				C0CB2A6BF025E31DC3B61103 /* [CP] Check Pods Manifest.lock */,
+				EF64AB852851D87B004ADEF3 /* Sources */,
+				EF64AB862851D87B004ADEF3 /* Frameworks */,
+				EF64AB872851D87B004ADEF3 /* Resources */,
+				04F05EE48EA077DD394E3F0D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF64AB8F2851D87B004ADEF3 /* PBXTargetDependency */,
+			);
+			name = StoreModuleTests;
+			productName = StoreModuleTests;
+			productReference = EF64AB892851D87B004ADEF3 /* StoreModuleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF8448192825258C00F00D1A /* StoreModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF8448212825258C00F00D1A /* Build configuration list for PBXNativeTarget "StoreModule" */;
+			buildPhases = (
+				56AF71EC9CA35BBCD0052437 /* [CP] Check Pods Manifest.lock */,
+				EF8448152825258C00F00D1A /* Headers */,
+				EF8448162825258C00F00D1A /* Sources */,
+				EF8448172825258C00F00D1A /* Frameworks */,
+				EF8448182825258C00F00D1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StoreModule;
+			productName = StoreModule;
+			productReference = EF84481A2825258C00F00D1A /* StoreModule.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF8448112825258C00F00D1A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					EF64AB882851D87B004ADEF3 = {
+						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
+					};
+					EF8448192825258C00F00D1A = {
+						CreatedOnToolsVersion = 13.3;
+						LastSwiftMigration = 1330;
+					};
+				};
+			};
+			buildConfigurationList = EF8448142825258C00F00D1A /* Build configuration list for PBXProject "StoreModule" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF8448102825258C00F00D1A;
+			productRefGroup = EF84481B2825258C00F00D1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF8448192825258C00F00D1A /* StoreModule */,
+				EF64AB882851D87B004ADEF3 /* StoreModuleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF64AB872851D87B004ADEF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF64AB9B2851DA23004ADEF3 /* Stores.json in Resources */,
+				EF64AB9D2851DA33004ADEF3 /* StoreDetail.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF8448182825258C00F00D1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04F05EE48EA077DD394E3F0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StoreModule-StoreModuleTests/Pods-StoreModule-StoreModuleTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StoreModule-StoreModuleTests/Pods-StoreModule-StoreModuleTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StoreModule-StoreModuleTests/Pods-StoreModule-StoreModuleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56AF71EC9CA35BBCD0052437 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StoreModule-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0CB2A6BF025E31DC3B61103 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StoreModule-StoreModuleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF64AB852851D87B004ADEF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF64ABA32851E060004ADEF3 /* MockGetStoreDetailRemoteDataSource.swift in Sources */,
+				EF64AB9F2851DA44004ADEF3 /* StoreData.swift in Sources */,
+				EF64AB942851D8E9004ADEF3 /* GetStoresUseCaseSpec.swift in Sources */,
+				EF64ABA52851E102004ADEF3 /* GetStoreDetailUseCaseSpec.swift in Sources */,
+				EF64ABA12851DB5F004ADEF3 /* MockGetStoresRemoteDataSource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF8448162825258C00F00D1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF84483A282526A200F00D1A /* GetStoreDetailRepository.swift in Sources */,
+				EF2BE26C284727CE00A29197 /* StoresTransformer.swift in Sources */,
+				EF2BE261284723D700A29197 /* GetStoresRemoteDataSource.swift in Sources */,
+				EF844842282526A200F00D1A /* StoreDetailModel.swift in Sources */,
+				EF844840282526A200F00D1A /* GetStoreDetailRemoteDataSource.swift in Sources */,
+				EF84483D282526A200F00D1A /* DAOStoreDetailBaseClass.swift in Sources */,
+				EF2BE2642847241B00A29197 /* StoreAPIService.swift in Sources */,
+				EF2BE25F284723C600A29197 /* DAOStoresResults.swift in Sources */,
+				EF2BE25E284723C600A29197 /* DAOStoresBaseClass.swift in Sources */,
+				EF2BE25A284723B900A29197 /* GetStoresRepository.swift in Sources */,
+				EF2BE266284726F400A29197 /* StoreModel.swift in Sources */,
+				EF2BE26B284727CE00A29197 /* StoreDetailTransformer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF64AB8F2851D87B004ADEF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF8448192825258C00F00D1A /* StoreModule */;
+			targetProxy = EF64AB8E2851D87B004ADEF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EF64AB902851D87B004ADEF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C85049B9B3CCA0DDF68DF1D8 /* Pods-StoreModule-StoreModuleTests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9T3PZX3RQ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.intan3951.StoreModuleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF64AB912851D87B004ADEF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 798C84F1852B0ECF2FA396D2 /* Pods-StoreModule-StoreModuleTests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9T3PZX3RQ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.intan3951.StoreModuleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF84481F2825258C00F00D1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EF8448202825258C00F00D1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EF8448222825258C00F00D1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 534C030DB0C3D1F82220A463 /* Pods-StoreModule.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9T3PZX3RQ4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.intan3951.StoreModule;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF8448232825258C00F00D1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6022E59AD7D68351B1F2DDCE /* Pods-StoreModule.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9T3PZX3RQ4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.intan3951.StoreModule;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF64AB922851D87B004ADEF3 /* Build configuration list for PBXNativeTarget "StoreModuleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF64AB902851D87B004ADEF3 /* Debug */,
+				EF64AB912851D87B004ADEF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF8448142825258C00F00D1A /* Build configuration list for PBXProject "StoreModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF84481F2825258C00F00D1A /* Debug */,
+				EF8448202825258C00F00D1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF8448212825258C00F00D1A /* Build configuration list for PBXNativeTarget "StoreModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF8448222825258C00F00D1A /* Debug */,
+				EF8448232825258C00F00D1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF8448112825258C00F00D1A /* Project object */;
+}

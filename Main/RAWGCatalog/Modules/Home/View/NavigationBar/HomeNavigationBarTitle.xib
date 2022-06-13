@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Qax-YD-rSn" customClass="HomeNavigationBarTitle" customModule="RAWGCatalog" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="142" height="58"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="o5i-rh-ivS">
+                    <rect key="frame" x="0.0" y="0.0" width="142" height="58"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RAWG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rN7-Tz-Ome" customClass="CustomLabel" customModule="RAWGCatalog" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="19.5" width="48" height="19"/>
+                            <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_gamepad_fill" translatesAutoresizingMaskIntoConstraints="NO" id="4rA-gn-hn3">
+                            <rect key="frame" x="57" y="14" width="30" height="30"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="Ak6-hw-iH7"/>
+                                <constraint firstAttribute="width" constant="30" id="WKc-0T-AbC"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Knv-Mq-Uh5" customClass="CustomLabel" customModule="RAWGCatalog" customModuleProvider="target">
+                            <rect key="frame" x="95.5" y="19.5" width="46.5" height="19"/>
+                            <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="atx-0A-N1D"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="o5i-rh-ivS" firstAttribute="leading" secondItem="atx-0A-N1D" secondAttribute="leading" id="hMz-pL-6Rd"/>
+                <constraint firstItem="atx-0A-N1D" firstAttribute="trailing" secondItem="o5i-rh-ivS" secondAttribute="trailing" id="iMM-em-xiR"/>
+                <constraint firstItem="o5i-rh-ivS" firstAttribute="top" secondItem="atx-0A-N1D" secondAttribute="top" id="j2T-DH-bjF"/>
+                <constraint firstItem="atx-0A-N1D" firstAttribute="bottom" secondItem="o5i-rh-ivS" secondAttribute="bottom" id="xR4-tQ-wfI"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="appLogoImg" destination="4rA-gn-hn3" id="5lt-To-pLz"/>
+            </connections>
+            <point key="canvasLocation" x="-425.60000000000002" y="-238.38080959520241"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_gamepad_fill" width="60" height="60"/>
+    </resources>
+</document>

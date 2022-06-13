@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		56EC6904EC0FAA2C679C7CC0 /* Pods_GenreModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3642A80E4F2A5E8076614D /* Pods_GenreModule.framework */; };
+		C76098062C9E839584F0128D /* Pods_GenreModule_GenreModuleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028CF4538BE3F60265941C6D /* Pods_GenreModule_GenreModuleTests.framework */; };
+		EF2BE22B28471A3500A29197 /* GetGenresRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BE22A28471A3500A29197 /* GetGenresRepository.swift */; };
+		EF2BE23228471A5300A29197 /* GetGenresRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BE23128471A5200A29197 /* GetGenresRemoteDataSource.swift */; };
+		EF2BE23528471A6700A29197 /* GenreAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BE23428471A6700A29197 /* GenreAPIService.swift */; };
+		EF2BE23D28471C0C00A29197 /* GenreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BE23C28471C0C00A29197 /* GenreModel.swift */; };
+		EF2BE24828471E0300A29197 /* DAOGenresBaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BE24428471E0300A29197 /* DAOGenresBaseClass.swift */; };
+		EF2BE24928471E0300A29197 /* DAOGenresResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BE24528471E0300A29197 /* DAOGenresResults.swift */; };
+		EF2BE24A28471E0300A29197 /* DAOGenreDetailBaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BE24728471E0300A29197 /* DAOGenreDetailBaseClass.swift */; };
+		EF2BE24C28471E1D00A29197 /* GetGenreDetailRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BE24B28471E1D00A29197 /* GetGenreDetailRemoteDataSource.swift */; };
+		EF2BE24E28471F3C00A29197 /* GenreDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BE24D28471F3C00A29197 /* GenreDetailModel.swift */; };
+		EF2BE2542847210F00A29197 /* GenresTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BE2532847210F00A29197 /* GenresTransformer.swift */; };
+		EF2BE2562847212500A29197 /* GenreDetailTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BE2552847212500A29197 /* GenreDetailTransformer.swift */; };
+		EF2BE2582847223800A29197 /* GetGenreDetailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BE2572847223800A29197 /* GetGenreDetailRepository.swift */; };
+		EF64AB43285193FF004ADEF3 /* GenreModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6C34902824D3C700B576FE /* GenreModule.framework */; };
+		EF64AB4E28519683004ADEF3 /* MockGetGenresRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF64AB4D28519683004ADEF3 /* MockGetGenresRemoteDataSource.swift */; };
+		EF64AB53285197FF004ADEF3 /* GenreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF64AB52285197FF004ADEF3 /* GenreData.swift */; };
+		EF64AB552851986C004ADEF3 /* Genres.json in Resources */ = {isa = PBXBuildFile; fileRef = EF64AB542851986C004ADEF3 /* Genres.json */; };
+		EF64AB59285198C4004ADEF3 /* GenreDetail.json in Resources */ = {isa = PBXBuildFile; fileRef = EF64AB58285198C4004ADEF3 /* GenreDetail.json */; };
+		EF64AB5B28519FB0004ADEF3 /* MockGetGenreDetailRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF64AB5A28519FB0004ADEF3 /* MockGetGenreDetailRemoteDataSource.swift */; };
+		EF64AB5D2851A111004ADEF3 /* GetGenresUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF64AB5C2851A111004ADEF3 /* GetGenresUseCaseSpec.swift */; };
+		EF64AB612851AAB4004ADEF3 /* GetGenreDetailUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF64AB602851AAB4004ADEF3 /* GetGenreDetailUseCaseSpec.swift */; };
+		EF6C34942824D3C700B576FE /* GenreModule.h in Headers */ = {isa = PBXBuildFile; fileRef = EF6C34932824D3C700B576FE /* GenreModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF64AB44285193FF004ADEF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF6C34872824D3C700B576FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF6C348F2824D3C700B576FE;
+			remoteInfo = GenreModule;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		028CF4538BE3F60265941C6D /* Pods_GenreModule_GenreModuleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GenreModule_GenreModuleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F33D1B8664D26FB8BE12CA /* Pods-GenreModule-GenreModuleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenreModule-GenreModuleTests.debug.xcconfig"; path = "../../Main/Pods/Target Support Files/Pods-GenreModule-GenreModuleTests/Pods-GenreModule-GenreModuleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4DF05EDBB3C715A47831A127 /* Pods-GenreModule-GenreModuleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenreModule-GenreModuleTests.release.xcconfig"; path = "../../Main/Pods/Target Support Files/Pods-GenreModule-GenreModuleTests/Pods-GenreModule-GenreModuleTests.release.xcconfig"; sourceTree = "<group>"; };
+		B8968E42203E4D5340E5B8B8 /* Pods-GenreModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenreModule.release.xcconfig"; path = "../../Main/Pods/Target Support Files/Pods-GenreModule/Pods-GenreModule.release.xcconfig"; sourceTree = "<group>"; };
+		C73EE3D03B893C07D54FF9E4 /* Pods-GenreModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenreModule.debug.xcconfig"; path = "../../Main/Pods/Target Support Files/Pods-GenreModule/Pods-GenreModule.debug.xcconfig"; sourceTree = "<group>"; };
+		EF2BE22A28471A3500A29197 /* GetGenresRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetGenresRepository.swift; sourceTree = "<group>"; };
+		EF2BE23128471A5200A29197 /* GetGenresRemoteDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetGenresRemoteDataSource.swift; sourceTree = "<group>"; };
+		EF2BE23428471A6700A29197 /* GenreAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenreAPIService.swift; sourceTree = "<group>"; };
+		EF2BE23C28471C0C00A29197 /* GenreModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenreModel.swift; sourceTree = "<group>"; };
+		EF2BE24428471E0300A29197 /* DAOGenresBaseClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAOGenresBaseClass.swift; sourceTree = "<group>"; };
+		EF2BE24528471E0300A29197 /* DAOGenresResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAOGenresResults.swift; sourceTree = "<group>"; };
+		EF2BE24728471E0300A29197 /* DAOGenreDetailBaseClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAOGenreDetailBaseClass.swift; sourceTree = "<group>"; };
+		EF2BE24B28471E1D00A29197 /* GetGenreDetailRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGenreDetailRemoteDataSource.swift; sourceTree = "<group>"; };
+		EF2BE24D28471F3C00A29197 /* GenreDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreDetailModel.swift; sourceTree = "<group>"; };
+		EF2BE2532847210F00A29197 /* GenresTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenresTransformer.swift; sourceTree = "<group>"; };
+		EF2BE2552847212500A29197 /* GenreDetailTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreDetailTransformer.swift; sourceTree = "<group>"; };
+		EF2BE2572847223800A29197 /* GetGenreDetailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGenreDetailRepository.swift; sourceTree = "<group>"; };
+		EF64AB3F285193FF004ADEF3 /* GenreModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenreModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF64AB4D28519683004ADEF3 /* MockGetGenresRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGetGenresRemoteDataSource.swift; sourceTree = "<group>"; };
+		EF64AB52285197FF004ADEF3 /* GenreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreData.swift; sourceTree = "<group>"; };
+		EF64AB542851986C004ADEF3 /* Genres.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Genres.json; sourceTree = "<group>"; };
+		EF64AB58285198C4004ADEF3 /* GenreDetail.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GenreDetail.json; sourceTree = "<group>"; };
+		EF64AB5A28519FB0004ADEF3 /* MockGetGenreDetailRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGetGenreDetailRemoteDataSource.swift; sourceTree = "<group>"; };
+		EF64AB5C2851A111004ADEF3 /* GetGenresUseCaseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGenresUseCaseSpec.swift; sourceTree = "<group>"; };
+		EF64AB602851AAB4004ADEF3 /* GetGenreDetailUseCaseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGenreDetailUseCaseSpec.swift; sourceTree = "<group>"; };
+		EF6C34902824D3C700B576FE /* GenreModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GenreModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF6C34932824D3C700B576FE /* GenreModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GenreModule.h; sourceTree = "<group>"; };
+		EF6C349E2824D69A00B576FE /* CommonModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CommonModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFBA17D42837939500342972 /* NetworkModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA3642A80E4F2A5E8076614D /* Pods_GenreModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GenreModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF64AB3C285193FF004ADEF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF64AB43285193FF004ADEF3 /* GenreModule.framework in Frameworks */,
+				C76098062C9E839584F0128D /* Pods_GenreModule_GenreModuleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6C348D2824D3C700B576FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56EC6904EC0FAA2C679C7CC0 /* Pods_GenreModule.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C50B6C36F60FC851D439D5E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C73EE3D03B893C07D54FF9E4 /* Pods-GenreModule.debug.xcconfig */,
+				B8968E42203E4D5340E5B8B8 /* Pods-GenreModule.release.xcconfig */,
+				04F33D1B8664D26FB8BE12CA /* Pods-GenreModule-GenreModuleTests.debug.xcconfig */,
+				4DF05EDBB3C715A47831A127 /* Pods-GenreModule-GenreModuleTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = "../../rawgcatalog-main/Pods";
+			sourceTree = "<group>";
+		};
+		EF2BE23328471A6700A29197 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BE23428471A6700A29197 /* GenreAPIService.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		EF2BE24328471E0300A29197 /* Genres */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BE24428471E0300A29197 /* DAOGenresBaseClass.swift */,
+				EF2BE24528471E0300A29197 /* DAOGenresResults.swift */,
+			);
+			path = Genres;
+			sourceTree = "<group>";
+		};
+		EF2BE24628471E0300A29197 /* GenreDetail */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BE24728471E0300A29197 /* DAOGenreDetailBaseClass.swift */,
+			);
+			path = GenreDetail;
+			sourceTree = "<group>";
+		};
+		EF2BE2512847210F00A29197 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BE2522847210F00A29197 /* Mapper */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EF2BE2522847210F00A29197 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BE2532847210F00A29197 /* GenresTransformer.swift */,
+				EF2BE2552847212500A29197 /* GenreDetailTransformer.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		EF64AB40285193FF004ADEF3 /* GenreModuleTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF64AB492851963E004ADEF3 /* Helpers */,
+				EF64AB5C2851A111004ADEF3 /* GetGenresUseCaseSpec.swift */,
+				EF64AB602851AAB4004ADEF3 /* GetGenreDetailUseCaseSpec.swift */,
+			);
+			path = GenreModuleTests;
+			sourceTree = "<group>";
+		};
+		EF64AB492851963E004ADEF3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EF64AB4B28519669004ADEF3 /* Data */,
+				EF64AB4D28519683004ADEF3 /* MockGetGenresRemoteDataSource.swift */,
+				EF64AB5A28519FB0004ADEF3 /* MockGetGenreDetailRemoteDataSource.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EF64AB4B28519669004ADEF3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				EF64AB542851986C004ADEF3 /* Genres.json */,
+				EF64AB58285198C4004ADEF3 /* GenreDetail.json */,
+				EF64AB52285197FF004ADEF3 /* GenreData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		EF6C34862824D3C700B576FE = {
+			isa = PBXGroup;
+			children = (
+				EF6C34922824D3C700B576FE /* GenreModule */,
+				EF64AB40285193FF004ADEF3 /* GenreModuleTests */,
+				EF6C34912824D3C700B576FE /* Products */,
+				C50B6C36F60FC851D439D5E4 /* Pods */,
+				F52292B81DA6FA591B9A5DE9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EF6C34912824D3C700B576FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF6C34902824D3C700B576FE /* GenreModule.framework */,
+				EF64AB3F285193FF004ADEF3 /* GenreModuleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF6C34922824D3C700B576FE /* GenreModule */ = {
+			isa = PBXGroup;
+			children = (
+				EF6C349A2824D65B00B576FE /* Data */,
+				EF6C349D2824D66F00B576FE /* Domain */,
+				EF2BE2512847210F00A29197 /* Utils */,
+				EF6C34932824D3C700B576FE /* GenreModule.h */,
+			);
+			path = GenreModule;
+			sourceTree = "<group>";
+		};
+		EF6C349A2824D65B00B576FE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BE22A28471A3500A29197 /* GetGenresRepository.swift */,
+				EF2BE2572847223800A29197 /* GetGenreDetailRepository.swift */,
+				EF6C34A42824D82A00B576FE /* Remote */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		EF6C349D2824D66F00B576FE /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				EF6C34AD2824D82B00B576FE /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		EF6C34A42824D82A00B576FE /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BE23328471A6700A29197 /* Request */,
+				EF6C34A52824D82A00B576FE /* Response */,
+				EF2BE23128471A5200A29197 /* GetGenresRemoteDataSource.swift */,
+				EF2BE24B28471E1D00A29197 /* GetGenreDetailRemoteDataSource.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		EF6C34A52824D82A00B576FE /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BE24328471E0300A29197 /* Genres */,
+				EF2BE24628471E0300A29197 /* GenreDetail */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		EF6C34AD2824D82B00B576FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BE23C28471C0C00A29197 /* GenreModel.swift */,
+				EF2BE24D28471F3C00A29197 /* GenreDetailModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F52292B81DA6FA591B9A5DE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFBA17D42837939500342972 /* NetworkModule.framework */,
+				EF6C349E2824D69A00B576FE /* CommonModule.framework */,
+				FA3642A80E4F2A5E8076614D /* Pods_GenreModule.framework */,
+				028CF4538BE3F60265941C6D /* Pods_GenreModule_GenreModuleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EF6C348B2824D3C700B576FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF6C34942824D3C700B576FE /* GenreModule.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		EF64AB3E285193FF004ADEF3 /* GenreModuleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF64AB48285193FF004ADEF3 /* Build configuration list for PBXNativeTarget "GenreModuleTests" */;
+			buildPhases = (
+				0331EA237C97DC98C61A7C0F /* [CP] Check Pods Manifest.lock */,
+				EF64AB3B285193FF004ADEF3 /* Sources */,
+				EF64AB3C285193FF004ADEF3 /* Frameworks */,
+				EF64AB3D285193FF004ADEF3 /* Resources */,
+				56E24DD2E0CBDC59DC533C2A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF64AB45285193FF004ADEF3 /* PBXTargetDependency */,
+			);
+			name = GenreModuleTests;
+			productName = GenreModuleTests;
+			productReference = EF64AB3F285193FF004ADEF3 /* GenreModuleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF6C348F2824D3C700B576FE /* GenreModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF6C34972824D3C700B576FE /* Build configuration list for PBXNativeTarget "GenreModule" */;
+			buildPhases = (
+				1E6AAC4C608A2401FC69A317 /* [CP] Check Pods Manifest.lock */,
+				EF6C348B2824D3C700B576FE /* Headers */,
+				EF6C348C2824D3C700B576FE /* Sources */,
+				EF6C348D2824D3C700B576FE /* Frameworks */,
+				EF6C348E2824D3C700B576FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GenreModule;
+			productName = GenreModule;
+			productReference = EF6C34902824D3C700B576FE /* GenreModule.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF6C34872824D3C700B576FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					EF64AB3E285193FF004ADEF3 = {
+						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
+					};
+					EF6C348F2824D3C700B576FE = {
+						CreatedOnToolsVersion = 13.3;
+						LastSwiftMigration = 1330;
+					};
+				};
+			};
+			buildConfigurationList = EF6C348A2824D3C700B576FE /* Build configuration list for PBXProject "GenreModule" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF6C34862824D3C700B576FE;
+			productRefGroup = EF6C34912824D3C700B576FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF6C348F2824D3C700B576FE /* GenreModule */,
+				EF64AB3E285193FF004ADEF3 /* GenreModuleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF64AB3D285193FF004ADEF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF64AB59285198C4004ADEF3 /* GenreDetail.json in Resources */,
+				EF64AB552851986C004ADEF3 /* Genres.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6C348E2824D3C700B576FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0331EA237C97DC98C61A7C0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GenreModule-GenreModuleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E6AAC4C608A2401FC69A317 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GenreModule-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56E24DD2E0CBDC59DC533C2A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GenreModule-GenreModuleTests/Pods-GenreModule-GenreModuleTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GenreModule-GenreModuleTests/Pods-GenreModule-GenreModuleTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GenreModule-GenreModuleTests/Pods-GenreModule-GenreModuleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF64AB3B285193FF004ADEF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF64AB5B28519FB0004ADEF3 /* MockGetGenreDetailRemoteDataSource.swift in Sources */,
+				EF64AB4E28519683004ADEF3 /* MockGetGenresRemoteDataSource.swift in Sources */,
+				EF64AB53285197FF004ADEF3 /* GenreData.swift in Sources */,
+				EF64AB612851AAB4004ADEF3 /* GetGenreDetailUseCaseSpec.swift in Sources */,
+				EF64AB5D2851A111004ADEF3 /* GetGenresUseCaseSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6C348C2824D3C700B576FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF2BE24C28471E1D00A29197 /* GetGenreDetailRemoteDataSource.swift in Sources */,
+				EF2BE2582847223800A29197 /* GetGenreDetailRepository.swift in Sources */,
+				EF2BE22B28471A3500A29197 /* GetGenresRepository.swift in Sources */,
+				EF2BE24828471E0300A29197 /* DAOGenresBaseClass.swift in Sources */,
+				EF2BE23528471A6700A29197 /* GenreAPIService.swift in Sources */,
+				EF2BE2562847212500A29197 /* GenreDetailTransformer.swift in Sources */,
+				EF2BE24928471E0300A29197 /* DAOGenresResults.swift in Sources */,
+				EF2BE24E28471F3C00A29197 /* GenreDetailModel.swift in Sources */,
+				EF2BE24A28471E0300A29197 /* DAOGenreDetailBaseClass.swift in Sources */,
+				EF2BE23D28471C0C00A29197 /* GenreModel.swift in Sources */,
+				EF2BE23228471A5300A29197 /* GetGenresRemoteDataSource.swift in Sources */,
+				EF2BE2542847210F00A29197 /* GenresTransformer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF64AB45285193FF004ADEF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF6C348F2824D3C700B576FE /* GenreModule */;
+			targetProxy = EF64AB44285193FF004ADEF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EF64AB46285193FF004ADEF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04F33D1B8664D26FB8BE12CA /* Pods-GenreModule-GenreModuleTests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9T3PZX3RQ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.intan3951.GenreModuleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF64AB47285193FF004ADEF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DF05EDBB3C715A47831A127 /* Pods-GenreModule-GenreModuleTests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9T3PZX3RQ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.intan3951.GenreModuleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF6C34952824D3C700B576FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EF6C34962824D3C700B576FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EF6C34982824D3C700B576FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C73EE3D03B893C07D54FF9E4 /* Pods-GenreModule.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9T3PZX3RQ4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.intan3951.GenreModule;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF6C34992824D3C700B576FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8968E42203E4D5340E5B8B8 /* Pods-GenreModule.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9T3PZX3RQ4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.intan3951.GenreModule;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF64AB48285193FF004ADEF3 /* Build configuration list for PBXNativeTarget "GenreModuleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF64AB46285193FF004ADEF3 /* Debug */,
+				EF64AB47285193FF004ADEF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF6C348A2824D3C700B576FE /* Build configuration list for PBXProject "GenreModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF6C34952824D3C700B576FE /* Debug */,
+				EF6C34962824D3C700B576FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF6C34972824D3C700B576FE /* Build configuration list for PBXNativeTarget "GenreModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF6C34982824D3C700B576FE /* Debug */,
+				EF6C34992824D3C700B576FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF6C34872824D3C700B576FE /* Project object */;
+}
