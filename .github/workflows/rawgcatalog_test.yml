@@ -13,6 +13,6 @@ jobs:
       - name: Test
         uses: actions/checkout@v1
       - name: Installing dependencies
-        run:  pod install
+        run:  pod install --project-directory=Main
       - name: Build and Test
         run:  xcodebuild test -workspace Main/RAWGCatalog.xcworkspace -scheme RAWGCatalog -destination 'platform=iOS Simulator,name=iPhone SE (2nd generation),OS=15.2' build test
