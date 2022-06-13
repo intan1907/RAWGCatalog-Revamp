@@ -10,11 +10,11 @@ jobs:
   build:
     runs-on: macOS-latest
     steps:
-      - name: Load Project
+      - name: Checkout repository
         uses: actions/checkout@v1
-      - name: Installing dependencies
+      - name: Installing dependencies with CocoaPods
         run:  pod install --project-directory=Main
-      - name: Build and Test
+      - name: Build and test
         run:  xcodebuild test -workspace Main/RAWGCatalog.xcworkspace -scheme RAWGCatalog -destination 'platform=iOS Simulator,name=iPhone SE (2nd generation),OS=15.2' -enableCodeCoverage YES build test
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v1.2.1
