@@ -36,7 +36,8 @@ where
     
     public func execute(request: GameParamModel?) -> AnyPublisher<GamesModel, Error> {
         guard let nonNilRequest = request else {
-            fatalError("Request could not be empty")
+            return Fail(error: CustomHttpError.noRequest)
+                .eraseToAnyPublisher()
         }
 
         let param = self.mapper.transformDomainParamToRequest(param: nonNilRequest)

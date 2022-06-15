@@ -48,6 +48,15 @@ class GetGamesUseCaseSpec: QuickSpec {
                         .before(timeout: 10)
                 }
             }
+            
+            context("when the request param is nil") {
+                itBehavesLike(CombinePublisher.self) {
+                    gameUseCase
+                        .execute(request: nil)
+                        .shouldFail(with: CustomHttpError.noRequest)
+                        .before(timeout: 10)
+                }
+            }
         }
     }
     
