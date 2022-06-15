@@ -48,7 +48,7 @@ class StoreDetailVC: BaseGamesVC {
     }
     
     override func viewDidLoad() {
-        self.configGenreDetailObservables()
+        self.configStoreDetailObservables()
         super.viewDidLoad()
     }
     
@@ -113,24 +113,18 @@ extension StoreDetailVC {
                 let caller = errors.first ?? ""
                 let message = errors.count > 1 ? errors[1] : caller
                 
-                switch caller {
-                case TextConstant.featuredGamesRequest:
-                    self.showMessage(message: message)
-                case TextConstant.genresRequest:
-                    // ada data, hanya show error via top message
-                    if !self.games.isEmpty {
-                        self.showTopMessage(message: message, error: true)
-                        self.isPossibleToLoadMore = false
-                        self.gamesCollectionVw.reloadData()
-                    }
-                default:
+                if caller == TextConstant.storesRequest && !self.games.isEmpty {
+                    self.showTopMessage(message: message, error: true)
+                    self.isPossibleToLoadMore = false
+                    self.gamesCollectionVw.reloadData()
+                } else {
                     self.showMessage(message: message)
                 }
             }
             .store(in: &cancellables)
     }
     
-    func configGenreDetailObservables() {
+    func configStoreDetailObservables() {
         self.setupRequestCompletion()
         
         self.presenter.$storeDetail

@@ -46,7 +46,7 @@ where
                 switch completion {
                 case .failure(let error):
                     self.isLoading = false
-                    self.errorMessage = TextConstant.genresRequest + "_" + error.localizedDescription
+                    self.errorMessage = TextConstant.storesRequest + "_" + error.localizedDescription
                 case .finished:
                     // get initial games
                     self.getGames(param: GameParamModel(page: 1, pageSize: 4, store: self.storeId))
