@@ -60,20 +60,19 @@ PODS:
   - UIColor_Hex_Swift (5.1.7)
 
 DEPENDENCIES:
-  - Alamofire (from `https://github.com/Alamofire/Alamofire.git`, tag `5.6.1`)
   - CoreModule (from `https://github.com/intan1907/CoreModule.git`, tag `1.0.8`)
   - Legible (from `https://github.com/sparta-science/Legible/`)
   - "MaterialComponents/TextControls+OutlinedTextAreas"
   - "MaterialComponents/TextControls+OutlinedTextFields"
   - Nimble
   - Quick
-  - RealmSwift (~> 10.25.0)
   - SDWebImage
   - SwiftMessages
   - UIColor_Hex_Swift
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - MaterialComponents
     - MDFInternationalization
     - Nimble
@@ -85,9 +84,6 @@ SPEC REPOS:
     - UIColor_Hex_Swift
 
 EXTERNAL SOURCES:
-  Alamofire:
-    :git: https://github.com/Alamofire/Alamofire.git
-    :tag: 5.6.1
   CoreModule:
     :git: https://github.com/intan1907/CoreModule.git
     :tag: 1.0.8
@@ -95,9 +91,6 @@ EXTERNAL SOURCES:
     :git: https://github.com/sparta-science/Legible/
 
 CHECKOUT OPTIONS:
-  Alamofire:
-    :git: https://github.com/Alamofire/Alamofire.git
-    :tag: 5.6.1
   CoreModule:
     :git: https://github.com/intan1907/CoreModule.git
     :tag: 1.0.8
@@ -119,6 +112,6 @@ SPEC CHECKSUMS:
   SwiftMessages: f0c7ef4705a570ad6c5e208b611f4333e660ed92
   UIColor_Hex_Swift: 31cd3e47440f07a20d2503a36bb0437a445b3c29
 
-PODFILE CHECKSUM: fcb8b4c1bc57cc2ad301b61cb9ae16971087aeb9
+PODFILE CHECKSUM: 40e5d9b6dba3f04ebecf9c392cbfc2afce180353
 
 COCOAPODS: 1.11.0.beta.2
