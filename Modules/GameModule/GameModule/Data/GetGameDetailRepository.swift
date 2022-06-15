@@ -47,7 +47,8 @@ where
     
     public func execute(request: Int?) -> AnyPublisher<GameDetailModel, Error> {
         guard let id = request else {
-            fatalError("Request could not be empty")
+            return Fail(error: CustomHttpError.noRequest)
+                .eraseToAnyPublisher()
         }
         
         if let detail = self.gameDetail, detail.id == id {
