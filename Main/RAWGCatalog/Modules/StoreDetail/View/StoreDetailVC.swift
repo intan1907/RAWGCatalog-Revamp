@@ -201,6 +201,8 @@ extension StoreDetailVC {
         } else {
             self.domainUrl = URL(string: "http://" + domain)
         }
+        
+        self.storeDomainBtn.isHidden = !UIApplication.shared.canOpenURL(self.domainUrl)
     }
     
 }
