@@ -55,6 +55,7 @@ class EditProfileVC: BaseVC {
     }
     
     @IBAction func saveBtnAction(_ sender: Any) {
+        self.showLoading(view: self.view)
         self.view.endEditing(true)
         self.setDefaultInput()
         

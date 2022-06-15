@@ -41,6 +41,7 @@ class AboutVC: BaseVC {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        self.showLoading(view: self.view)
         self.presenter.getProfile()
     }
     
