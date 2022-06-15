@@ -67,11 +67,6 @@ extension UIView {
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = bounds
         gradientLayer.colors = [colorOne.cgColor, colorTwo.cgColor]
-//        gradientLayer.locations = [0.0, 0.1]
-//        gradientLayer.endPoint = CGPoint(x: 0.0, y: 0.0)
-        
-//        gradientLayer.startPoint = CGPoint(x: 0.0, y: 0)
-//        gradientLayer.endPoint = CGPoint(x: 0.0, y: 0.5)
         
         gradientLayer.startPoint = CGPoint(x: 0.5, y: 0.0)
         gradientLayer.endPoint = CGPoint(x: 0.5, y: 1.0)
