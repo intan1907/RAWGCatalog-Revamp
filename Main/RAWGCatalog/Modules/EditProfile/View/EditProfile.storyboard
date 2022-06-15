@@ -100,7 +100,7 @@
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovr-0J-SYD" customClass="CustomButton" customModule="RAWGCatalog" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="730" width="374" height="56"/>
+                                                <rect key="frame" x="20" y="746" width="374" height="56"/>
                                                 <color key="backgroundColor" name="ColorTeal"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="56" id="z1H-tq-d1u"/>
@@ -121,7 +121,7 @@
                                             <constraint firstItem="d1p-R3-CHk" firstAttribute="top" secondItem="6ey-5W-KDD" secondAttribute="bottom" constant="32" id="PQK-Bj-fda"/>
                                             <constraint firstAttribute="trailing" secondItem="ZNQ-WQ-Vol" secondAttribute="trailing" constant="20" id="RS9-hp-dOz"/>
                                             <constraint firstItem="ibt-Vc-QM2" firstAttribute="leading" secondItem="kua-R7-5ah" secondAttribute="leading" constant="20" id="RWT-k6-cZp"/>
-                                            <constraint firstAttribute="bottom" secondItem="ovr-0J-SYD" secondAttribute="bottom" constant="32" id="SVp-Xd-HBu"/>
+                                            <constraint firstAttribute="bottom" secondItem="ovr-0J-SYD" secondAttribute="bottom" constant="16" id="SVp-Xd-HBu"/>
                                             <constraint firstAttribute="trailing" secondItem="d1p-R3-CHk" secondAttribute="trailing" constant="20" id="Sn2-J4-uHI"/>
                                             <constraint firstItem="ovr-0J-SYD" firstAttribute="top" relation="greaterThanOrEqual" secondItem="d1p-R3-CHk" secondAttribute="bottom" constant="32" id="Vol-dS-p9y"/>
                                             <constraint firstItem="d1p-R3-CHk" firstAttribute="leading" secondItem="kua-R7-5ah" secondAttribute="leading" constant="20" id="W7g-RO-UDK"/>
