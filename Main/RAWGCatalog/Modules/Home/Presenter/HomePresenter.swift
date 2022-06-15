@@ -117,5 +117,4 @@ where
             }
             .store(in: &cancellables)
     }
-    
 }

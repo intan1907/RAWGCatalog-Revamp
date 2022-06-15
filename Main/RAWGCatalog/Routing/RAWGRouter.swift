@@ -77,7 +77,6 @@ where
             caller.present(vc, animated: true)
         }
     }
-    
 }
 
 class RAWGRouterManager {

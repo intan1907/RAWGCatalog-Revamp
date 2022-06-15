@@ -91,7 +91,9 @@ public extension UIFont {
 }
 
 extension UIFontDescriptor.AttributeName {
+    
     static let nsctFontUIUsage = UIFontDescriptor.AttributeName(rawValue: "NSCTFontUIUsageAttribute")
+    
 }
 
 public extension UIFont {
@@ -192,4 +194,5 @@ public extension UIFont {
             }
         }
     }
+    
 }

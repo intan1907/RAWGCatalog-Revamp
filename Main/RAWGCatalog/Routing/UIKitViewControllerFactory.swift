@@ -13,6 +13,7 @@ import AboutModule
 import StoreModule
 
 class UIKitViewControllerFactory: ViewControllerFactory {
+    
     typealias SortingOption = GameOrderingOption
     typealias GameId = Int
     typealias GameDetailModel = GameModule.GameDetailModel

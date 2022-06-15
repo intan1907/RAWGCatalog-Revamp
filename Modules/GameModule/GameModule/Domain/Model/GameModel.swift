@@ -8,6 +8,7 @@
 import Foundation
 
 open class GameModel: Identifiable, Equatable {
+    
     public var id: Int?
     public var imageUrl: String?
     public var image: Data?
