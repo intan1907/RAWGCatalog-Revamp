@@ -100,15 +100,11 @@ extension GenreDetailVC {
                 let caller = errors.first ?? ""
                 let message = errors.count > 1 ? errors[1] : caller
                 
-                if caller == TextConstant.genresRequest {
+                if caller == TextConstant.genresRequest && !self.games.isEmpty {
                     // ada data, hanya show error via top message
-                    if !self.games.isEmpty {
-                        self.showTopMessage(message: message, error: true)
-                        self.isPossibleToLoadMore = false
-                        self.gamesCollectionVw.reloadData()
-                    } else {
-                        self.showMessage(message: message)
-                    }
+                    self.showTopMessage(message: message, error: true)
+                    self.isPossibleToLoadMore = false
+                    self.gamesCollectionVw.reloadData()
                 } else {
                     self.showMessage(message: message)
                 }
