@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		56EC6904EC0FAA2C679C7CC0 /* Pods_GenreModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3642A80E4F2A5E8076614D /* Pods_GenreModule.framework */; };
-		C76098062C9E839584F0128D /* Pods_GenreModule_GenreModuleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028CF4538BE3F60265941C6D /* Pods_GenreModule_GenreModuleTests.framework */; };
+		8315DA79B64786C155C69C79 /* Pods_GenreModule_GenreModuleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16632F4110ECDE4B564E158C /* Pods_GenreModule_GenreModuleTests.framework */; };
 		EF2BE22B28471A3500A29197 /* GetGenresRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BE22A28471A3500A29197 /* GetGenresRepository.swift */; };
 		EF2BE23228471A5300A29197 /* GetGenresRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BE23128471A5200A29197 /* GetGenresRemoteDataSource.swift */; };
 		EF2BE23528471A6700A29197 /* GenreAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BE23428471A6700A29197 /* GenreAPIService.swift */; };
@@ -43,10 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		028CF4538BE3F60265941C6D /* Pods_GenreModule_GenreModuleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GenreModule_GenreModuleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F33D1B8664D26FB8BE12CA /* Pods-GenreModule-GenreModuleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenreModule-GenreModuleTests.debug.xcconfig"; path = "../../Main/Pods/Target Support Files/Pods-GenreModule-GenreModuleTests/Pods-GenreModule-GenreModuleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		16632F4110ECDE4B564E158C /* Pods_GenreModule_GenreModuleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GenreModule_GenreModuleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47C2CB3B5B0EBA16D2E97EEC /* Pods-GenreModuleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenreModuleTests.debug.xcconfig"; path = "../../Main/Pods/Target Support Files/Pods-GenreModuleTests/Pods-GenreModuleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4DF05EDBB3C715A47831A127 /* Pods-GenreModule-GenreModuleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenreModule-GenreModuleTests.release.xcconfig"; path = "../../Main/Pods/Target Support Files/Pods-GenreModule-GenreModuleTests/Pods-GenreModule-GenreModuleTests.release.xcconfig"; sourceTree = "<group>"; };
 		B8968E42203E4D5340E5B8B8 /* Pods-GenreModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenreModule.release.xcconfig"; path = "../../Main/Pods/Target Support Files/Pods-GenreModule/Pods-GenreModule.release.xcconfig"; sourceTree = "<group>"; };
+		C5B3CC4BDBE6F713E53A3A0E /* Pods-GenreModuleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenreModuleTests.release.xcconfig"; path = "../../Main/Pods/Target Support Files/Pods-GenreModuleTests/Pods-GenreModuleTests.release.xcconfig"; sourceTree = "<group>"; };
 		C73EE3D03B893C07D54FF9E4 /* Pods-GenreModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenreModule.debug.xcconfig"; path = "../../Main/Pods/Target Support Files/Pods-GenreModule/Pods-GenreModule.debug.xcconfig"; sourceTree = "<group>"; };
 		EF2BE22A28471A3500A29197 /* GetGenresRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetGenresRepository.swift; sourceTree = "<group>"; };
 		EF2BE23128471A5200A29197 /* GetGenresRemoteDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetGenresRemoteDataSource.swift; sourceTree = "<group>"; };
@@ -81,7 +83,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF64AB43285193FF004ADEF3 /* GenreModule.framework in Frameworks */,
-				C76098062C9E839584F0128D /* Pods_GenreModule_GenreModuleTests.framework in Frameworks */,
+				8315DA79B64786C155C69C79 /* Pods_GenreModule_GenreModuleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +105,8 @@
 				B8968E42203E4D5340E5B8B8 /* Pods-GenreModule.release.xcconfig */,
 				04F33D1B8664D26FB8BE12CA /* Pods-GenreModule-GenreModuleTests.debug.xcconfig */,
 				4DF05EDBB3C715A47831A127 /* Pods-GenreModule-GenreModuleTests.release.xcconfig */,
+				47C2CB3B5B0EBA16D2E97EEC /* Pods-GenreModuleTests.debug.xcconfig */,
+				C5B3CC4BDBE6F713E53A3A0E /* Pods-GenreModuleTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = "../../rawgcatalog-main/Pods";
@@ -264,7 +268,7 @@
 				EFBA17D42837939500342972 /* NetworkModule.framework */,
 				EF6C349E2824D69A00B576FE /* CommonModule.framework */,
 				FA3642A80E4F2A5E8076614D /* Pods_GenreModule.framework */,
-				028CF4538BE3F60265941C6D /* Pods_GenreModule_GenreModuleTests.framework */,
+				16632F4110ECDE4B564E158C /* Pods_GenreModule_GenreModuleTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

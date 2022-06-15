@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A3EDC1423D447851438DD384 /* Pods_AboutModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1153979812689C64F7F455 /* Pods_AboutModule.framework */; };
-		A9D7F274B0A7E826FBCC49B0 /* Pods_AboutModule_AboutModuleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C897A50913A9A398BD42438 /* Pods_AboutModule_AboutModuleTests.framework */; };
+		B05D8D51465A48C5E4DA2777 /* Pods_AboutModule_AboutModuleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4614F4608D6A09AD7634640 /* Pods_AboutModule_AboutModuleTests.framework */; };
 		EF64AB6A2851B12C004ADEF3 /* AboutModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFEB2979282A17F5009D45D6 /* AboutModule.framework */; };
 		EF64AB742851B6FF004ADEF3 /* MockGetProfileDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF64AB732851B6FF004ADEF3 /* MockGetProfileDataSource.swift */; };
 		EF64AB762851BF29004ADEF3 /* GetProfileUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF64AB752851BF29004ADEF3 /* GetProfileUseCaseSpec.swift */; };
@@ -41,12 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1C897A50913A9A398BD42438 /* Pods_AboutModule_AboutModuleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AboutModule_AboutModuleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17384283E386EB29A6AF5E24 /* Pods-AboutModuleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AboutModuleTests.debug.xcconfig"; path = "../../Main/Pods/Target Support Files/Pods-AboutModuleTests/Pods-AboutModuleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2699D8024EE5D715873B8526 /* Pods-AboutModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AboutModule.release.xcconfig"; path = "../../Main/Pods/Target Support Files/Pods-AboutModule/Pods-AboutModule.release.xcconfig"; sourceTree = "<group>"; };
 		403D08639586CC8375A230F7 /* Pods-AboutModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AboutModule.debug.xcconfig"; path = "../../Main/Pods/Target Support Files/Pods-AboutModule/Pods-AboutModule.debug.xcconfig"; sourceTree = "<group>"; };
 		6DEB552C8F065F0D32396E31 /* Pods-AboutModule-AboutModuleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AboutModule-AboutModuleTests.debug.xcconfig"; path = "../../Main/Pods/Target Support Files/Pods-AboutModule-AboutModuleTests/Pods-AboutModule-AboutModuleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CC1153979812689C64F7F455 /* Pods_AboutModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AboutModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4614F4608D6A09AD7634640 /* Pods_AboutModule_AboutModuleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AboutModule_AboutModuleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D65F12AE321C8B4355EDCC88 /* Pods-AboutModule-AboutModuleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AboutModule-AboutModuleTests.release.xcconfig"; path = "../../Main/Pods/Target Support Files/Pods-AboutModule-AboutModuleTests/Pods-AboutModule-AboutModuleTests.release.xcconfig"; sourceTree = "<group>"; };
+		D6CB6B2ECBB0AC2F6B6D29FB /* Pods-AboutModuleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AboutModuleTests.release.xcconfig"; path = "../../Main/Pods/Target Support Files/Pods-AboutModuleTests/Pods-AboutModuleTests.release.xcconfig"; sourceTree = "<group>"; };
 		EF058BC82844BB3100C08B67 /* CoreModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF058BCC2844BB3700C08B67 /* CommonModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CommonModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF64AB662851B12C004ADEF3 /* AboutModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AboutModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,7 +80,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF64AB6A2851B12C004ADEF3 /* AboutModule.framework in Frameworks */,
-				A9D7F274B0A7E826FBCC49B0 /* Pods_AboutModule_AboutModuleTests.framework in Frameworks */,
+				B05D8D51465A48C5E4DA2777 /* Pods_AboutModule_AboutModuleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +102,8 @@
 				2699D8024EE5D715873B8526 /* Pods-AboutModule.release.xcconfig */,
 				6DEB552C8F065F0D32396E31 /* Pods-AboutModule-AboutModuleTests.debug.xcconfig */,
 				D65F12AE321C8B4355EDCC88 /* Pods-AboutModule-AboutModuleTests.release.xcconfig */,
+				17384283E386EB29A6AF5E24 /* Pods-AboutModuleTests.debug.xcconfig */,
+				D6CB6B2ECBB0AC2F6B6D29FB /* Pods-AboutModuleTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = "../../rawgcatalog-main/Pods";
@@ -112,7 +116,7 @@
 				EF058BC82844BB3100C08B67 /* CoreModule.framework */,
 				EFBA17D02837938500342972 /* NetworkModule.framework */,
 				CC1153979812689C64F7F455 /* Pods_AboutModule.framework */,
-				1C897A50913A9A398BD42438 /* Pods_AboutModule_AboutModuleTests.framework */,
+				D4614F4608D6A09AD7634640 /* Pods_AboutModule_AboutModuleTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
