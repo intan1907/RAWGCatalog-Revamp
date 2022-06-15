@@ -70,5 +70,4 @@ where
             }
             .store(in: &cancellables)
     }
-    
 }

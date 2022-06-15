@@ -8,6 +8,7 @@
 import UIKit
 
 protocol ViewControllerFactory {
+    
     associatedtype SortingOption
     associatedtype GameId
     associatedtype GameDetailModel
@@ -26,4 +27,5 @@ protocol ViewControllerFactory {
     func instantiateGenreDetailVC(id: GenreId) -> UIViewController
     func instantiateStoreDetailVC(id: StoreId) -> UIViewController
     func instantiateEditProfileVC(profile: ProfileModel?) -> UIViewController
+    
 }

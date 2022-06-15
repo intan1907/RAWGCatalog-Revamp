@@ -10,6 +10,7 @@ import GameModule
 import AboutModule
 
 protocol Router {
+    
     typealias SortingOption = GameOrderingOption
     typealias GameId = Int
     typealias GameDetailModel = GameModule.GameDetailModel
@@ -25,4 +26,5 @@ protocol Router {
     func routeToGenreDetail(caller: UIViewController, id: GenreId)
     func routeToStoreDetail(caller: UIViewController, id: StoreId)
     func routeToEditProfile(caller: UIViewController, profile: ProfileModel?)
+    
 }

@@ -9,6 +9,7 @@ import CoreModule
 import Combine
 
 public struct GetGenreDetailRemoteDataSource: DataSource {
+    
     public typealias Request = Int
     public typealias Response = DAOGenreDetailBaseClass
     
