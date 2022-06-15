@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8CFA2B9446E09F4C061189F5 /* Pods_GameModule_GameModuleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7580DD9AA5E260456D81E8 /* Pods_GameModule_GameModuleTests.framework */; };
 		CD1CD26FD621E08102C0CCE2 /* Pods_GameModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC458C28C9D3124FBCA5B962 /* Pods_GameModule.framework */; };
+		DC53C801F5027CB915605291 /* Pods_GameModule_GameModuleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E107ED1DE41346269B617F /* Pods_GameModule_GameModuleTests.framework */; };
 		EF058BD92844F0BA00C08B67 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF058BD82844F0BA00C08B67 /* GameModel.swift */; };
 		EF058BDB2844F35400C08B67 /* GamesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF058BDA2844F35400C08B67 /* GamesModel.swift */; };
 		EF058BDE2844F37900C08B67 /* GameParamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF058BDD2844F37900C08B67 /* GameParamModel.swift */; };
@@ -65,13 +65,13 @@
 
 /* Begin PBXFileReference section */
 		337F38B15D97C5DE0E3C5BA3 /* Pods-GameModule-GameModuleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameModule-GameModuleTests.release.xcconfig"; path = "../../Main/Pods/Target Support Files/Pods-GameModule-GameModuleTests/Pods-GameModule-GameModuleTests.release.xcconfig"; sourceTree = "<group>"; };
+		40E107ED1DE41346269B617F /* Pods_GameModule_GameModuleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GameModule_GameModuleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D3E1CFCFC8299AE3687DEAD /* Pods-GameModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameModule.debug.xcconfig"; path = "../../Main/Pods/Target Support Files/Pods-GameModule/Pods-GameModule.debug.xcconfig"; sourceTree = "<group>"; };
 		7F3566DEBF1854A107F4D537 /* Pods-GameModule-GameModuleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameModule-GameModuleTests.debug.xcconfig"; path = "../../Main/Pods/Target Support Files/Pods-GameModule-GameModuleTests/Pods-GameModule-GameModuleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		92FAC4AB93581356EC9A4FDA /* Pods-GameModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameModule.release.xcconfig"; path = "../../Main/Pods/Target Support Files/Pods-GameModule/Pods-GameModule.release.xcconfig"; sourceTree = "<group>"; };
 		BF72A3A35F18AC22C7E834BB /* Pods-GameModuleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameModuleTests.release.xcconfig"; path = "../../Main/Pods/Target Support Files/Pods-GameModuleTests/Pods-GameModuleTests.release.xcconfig"; sourceTree = "<group>"; };
 		D0C37554C0F89F27B435D45E /* Pods-GameModuleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameModuleTests.debug.xcconfig"; path = "../../Main/Pods/Target Support Files/Pods-GameModuleTests/Pods-GameModuleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EC458C28C9D3124FBCA5B962 /* Pods_GameModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GameModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED7580DD9AA5E260456D81E8 /* Pods_GameModule_GameModuleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GameModule_GameModuleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF058BCF2844BB4A00C08B67 /* CoreModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF058BD82844F0BA00C08B67 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		EF058BDA2844F35400C08B67 /* GamesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesModel.swift; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF40245E284F1F9D00F75167 /* GameModule.framework in Frameworks */,
-				8CFA2B9446E09F4C061189F5 /* Pods_GameModule_GameModuleTests.framework in Frameworks */,
+				DC53C801F5027CB915605291 /* Pods_GameModule_GameModuleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,7 +171,7 @@
 				EFBA17D82837939F00342972 /* CommonModule.framework */,
 				EFBA17CC2837937800342972 /* NetworkModule.framework */,
 				EC458C28C9D3124FBCA5B962 /* Pods_GameModule.framework */,
-				ED7580DD9AA5E260456D81E8 /* Pods_GameModule_GameModuleTests.framework */,
+				40E107ED1DE41346269B617F /* Pods_GameModule_GameModuleTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

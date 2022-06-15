@@ -37,9 +37,13 @@ def utils_pods
 end
 
 # testing pod
-def testing_pods
+def non_await_testing_pods
   pod 'Quick'
   pod 'Nimble'
+end
+
+def testing_pods
+  non_await_testing_pods
   pod 'Legible', :git => 'https://github.com/sparta-science/Legible/'
 end
 
@@ -50,7 +54,7 @@ target 'RAWGCatalog' do
   utils_pods
   target 'RAWGCatalogTests' do
     inherit! :search_paths
-    testing_pods
+    non_await_testing_pods
   end
 end
 

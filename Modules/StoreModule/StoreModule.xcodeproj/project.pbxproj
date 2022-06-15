@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D9DFD9E2AC20405C92A7BA9E /* Pods_StoreModule_StoreModuleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10AC5A8F77CBA566F23296E0 /* Pods_StoreModule_StoreModuleTests.framework */; };
+		AD6BB78C537C99322904EB7D /* Pods_StoreModule_StoreModuleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95DBFD97B063DD38567CA2FE /* Pods_StoreModule_StoreModuleTests.framework */; };
 		DF588C5607D3B2C5319FB888 /* Pods_StoreModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043A6E8AC95890A32227C3C8 /* Pods_StoreModule.framework */; };
 		EF2BE25A284723B900A29197 /* GetStoresRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BE259284723B900A29197 /* GetStoresRepository.swift */; };
 		EF2BE25E284723C600A29197 /* DAOStoresBaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BE25C284723C600A29197 /* DAOStoresBaseClass.swift */; };
@@ -44,10 +44,12 @@
 
 /* Begin PBXFileReference section */
 		043A6E8AC95890A32227C3C8 /* Pods_StoreModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StoreModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		10AC5A8F77CBA566F23296E0 /* Pods_StoreModule_StoreModuleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StoreModule_StoreModuleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E0A9922C0FF86EB600F6D1D /* Pods-StoreModuleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreModuleTests.debug.xcconfig"; path = "../../Main/Pods/Target Support Files/Pods-StoreModuleTests/Pods-StoreModuleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		234A032320B7A07AF6B07883 /* Pods-StoreModuleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreModuleTests.release.xcconfig"; path = "../../Main/Pods/Target Support Files/Pods-StoreModuleTests/Pods-StoreModuleTests.release.xcconfig"; sourceTree = "<group>"; };
 		534C030DB0C3D1F82220A463 /* Pods-StoreModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreModule.debug.xcconfig"; path = "../../Main/Pods/Target Support Files/Pods-StoreModule/Pods-StoreModule.debug.xcconfig"; sourceTree = "<group>"; };
 		6022E59AD7D68351B1F2DDCE /* Pods-StoreModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreModule.release.xcconfig"; path = "../../Main/Pods/Target Support Files/Pods-StoreModule/Pods-StoreModule.release.xcconfig"; sourceTree = "<group>"; };
 		798C84F1852B0ECF2FA396D2 /* Pods-StoreModule-StoreModuleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreModule-StoreModuleTests.release.xcconfig"; path = "../../Main/Pods/Target Support Files/Pods-StoreModule-StoreModuleTests/Pods-StoreModule-StoreModuleTests.release.xcconfig"; sourceTree = "<group>"; };
+		95DBFD97B063DD38567CA2FE /* Pods_StoreModule_StoreModuleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StoreModule_StoreModuleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C85049B9B3CCA0DDF68DF1D8 /* Pods-StoreModule-StoreModuleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreModule-StoreModuleTests.debug.xcconfig"; path = "../../Main/Pods/Target Support Files/Pods-StoreModule-StoreModuleTests/Pods-StoreModule-StoreModuleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EF2BE259284723B900A29197 /* GetStoresRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetStoresRepository.swift; sourceTree = "<group>"; };
 		EF2BE25C284723C600A29197 /* DAOStoresBaseClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAOStoresBaseClass.swift; sourceTree = "<group>"; };
@@ -81,7 +83,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF64AB8D2851D87B004ADEF3 /* StoreModule.framework in Frameworks */,
-				D9DFD9E2AC20405C92A7BA9E /* Pods_StoreModule_StoreModuleTests.framework in Frameworks */,
+				AD6BB78C537C99322904EB7D /* Pods_StoreModule_StoreModuleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +104,7 @@
 				EFBA17DF283793B200342972 /* NetworkModule.framework */,
 				EFBA17DB283793AC00342972 /* CommonModule.framework */,
 				043A6E8AC95890A32227C3C8 /* Pods_StoreModule.framework */,
-				10AC5A8F77CBA566F23296E0 /* Pods_StoreModule_StoreModuleTests.framework */,
+				95DBFD97B063DD38567CA2FE /* Pods_StoreModule_StoreModuleTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,6 +116,8 @@
 				6022E59AD7D68351B1F2DDCE /* Pods-StoreModule.release.xcconfig */,
 				C85049B9B3CCA0DDF68DF1D8 /* Pods-StoreModule-StoreModuleTests.debug.xcconfig */,
 				798C84F1852B0ECF2FA396D2 /* Pods-StoreModule-StoreModuleTests.release.xcconfig */,
+				0E0A9922C0FF86EB600F6D1D /* Pods-StoreModuleTests.debug.xcconfig */,
+				234A032320B7A07AF6B07883 /* Pods-StoreModuleTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = "../../rawgcatalog-main/Pods";
