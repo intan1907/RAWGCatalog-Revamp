@@ -34,7 +34,8 @@ where
     
     public func execute(request: ProfileModel?) -> AnyPublisher<Bool, Error> {
         guard let request = request else {
-            fatalError("Request could not be empty")
+            return Fail(error: DatabaseError.requestFailed)
+                .eraseToAnyPublisher()
         }
         
         let entity = self.mapper.transformDomainToEntity(domain: request)

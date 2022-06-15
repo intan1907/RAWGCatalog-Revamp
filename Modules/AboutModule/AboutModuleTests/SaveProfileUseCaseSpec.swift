@@ -43,6 +43,15 @@ class SaveProfileUseCaseSpec: QuickSpec {
                         .before(timeout: 10)
                 }
             }
+            
+            context("with nil profile model param") {
+                itBehavesLike(CombinePublisher.self) {
+                    saveProfileUseCase
+                        .execute(request: nil)
+                        .shouldFail(with: DatabaseError.requestFailed)
+                        .before(timeout: 10)
+                }
+            }
         }
     }
     
