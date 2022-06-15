@@ -30,10 +30,10 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EMA-qP-cbM">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="390"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="318"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="F7M-Jl-dme">
-                                                <rect key="frame" x="16" y="16" width="382" height="358"/>
+                                                <rect key="frame" x="16" y="16" width="382" height="286"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Nld-5t-Qb1">
                                                         <rect key="frame" x="0.0" y="0.0" width="382" height="43.5"/>
@@ -98,7 +98,7 @@
                                                                 </constraints>
                                                                 <color key="tintColor" name="ColorTextAdaptive"/>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" title="See all">
+                                                                <buttonConfiguration key="configuration" style="plain" title="See All">
                                                                     <fontDescription key="titleFontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="14"/>
                                                                 </buttonConfiguration>
                                                                 <userDefinedRuntimeAttributes>
@@ -115,8 +115,8 @@
                                                             </button>
                                                         </subviews>
                                                     </stackView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Hp-Oz-4OW" customClass="CustomButton" customModule="RAWGCatalog" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="302" width="382" height="56"/>
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Hp-Oz-4OW" customClass="CustomButton" customModule="RAWGCatalog" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="286" width="382" height="56"/>
                                                         <color key="backgroundColor" name="ColorGrayTransparentAdaptive"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="56" id="14M-In-TXl"/>

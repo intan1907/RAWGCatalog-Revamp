@@ -79,7 +79,7 @@
                                                         </constraints>
                                                         <color key="tintColor" name="ColorTextAdaptive"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="See all">
+                                                        <buttonConfiguration key="configuration" style="plain" title="See All">
                                                             <fontDescription key="titleFontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="14"/>
                                                         </buttonConfiguration>
                                                         <userDefinedRuntimeAttributes>
