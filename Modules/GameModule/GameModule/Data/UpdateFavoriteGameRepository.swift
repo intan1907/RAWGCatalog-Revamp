@@ -36,7 +36,8 @@ where
     // suppose to return isFavorite status
     public func execute(request: GameDetailModel?) -> AnyPublisher<Bool, Error> {
         guard let unsavedModel = request, let id = request?.id else {
-            fatalError("Request could not be empty")
+            return Fail(error: DatabaseError.requestFailed)
+                .eraseToAnyPublisher()
         }
         
         let strId = "\(id)"

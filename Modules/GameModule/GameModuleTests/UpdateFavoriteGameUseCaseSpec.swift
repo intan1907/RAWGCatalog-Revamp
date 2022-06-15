@@ -79,6 +79,15 @@ class UpdateFavoriteGameUseCaseSpec: QuickSpec {
                     .before(timeout: 10)
             }
         }
+        
+        context("when request param is nil, return error") {
+            itBehavesLike(CombinePublisher.self) {
+                updateGameUseCase
+                    .execute(request: nil)
+                    .shouldFail(with: DatabaseError.requestFailed)
+                    .before(timeout: 10)
+            }
+        }
     }
     
 }
