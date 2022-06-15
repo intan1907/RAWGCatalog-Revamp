@@ -74,6 +74,16 @@ class GetGameDetailUseCaseSpec: QuickSpec {
                         .before(timeout: 10)
                 }
             }
+            
+            context("when request param is nil") { [weak self] in
+                guard let self = self else { return }
+                itBehavesLike(CombinePublisher.self) {
+                    self.makeGameDetailUseCase()
+                        .execute(request: nil)
+                        .shouldFail(with: CustomHttpError.noRequest)
+                        .before(timeout: 10)
+                }
+            }
         }
     }
     
