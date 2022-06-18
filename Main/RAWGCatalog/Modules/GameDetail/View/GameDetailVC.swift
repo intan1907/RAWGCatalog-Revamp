@@ -137,7 +137,7 @@ extension GameDetailVC {
                 self.backgroundImg.setLoad(isLoad: false)
                 if err == nil {
                     self.backgroundImg.image = img ?? UIImage(named: IconConstant.notFound)
-                    self.model?.image = img?.pngData()
+                    self.model?.image = img?.jpegData(compressionQuality: 0.4)
                 } else {
                     // show no image
                     self.backgroundImg.image = UIImage(named: IconConstant.notFound)
