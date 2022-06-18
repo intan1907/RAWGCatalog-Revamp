@@ -46,7 +46,7 @@ public struct GameDetailTransformer: ResponseMapper, EntityMapper {
     public func transformDomainToEntity(domain: GameDetailModel) -> FavoriteGameEntity {
         let entity = FavoriteGameEntity()
         entity.id = "\(domain.id ?? 0)"
-        entity.image = domain.image
+        entity.image = self.resizedImageData(with: domain.image, limitInKB: 16384)
         entity.imageUrl = domain.imageUrl ?? "-"
         entity.name = domain.name ?? "-"
         entity.lastModified = domain.lastModified ?? "-"
@@ -95,6 +95,46 @@ public struct GameDetailTransformer: ResponseMapper, EntityMapper {
         model.isFavorite = true
         
         return model
+    }
+    
+}
+
+extension GameDetailTransformer {
+    
+    private func resizeWithPercentage(image: UIImage, percentage: CGFloat) -> UIImage? {
+        let imageView = UIImageView(frame: CGRect(origin: .zero, size: CGSize(width: image.size.width * percentage, height: image.size.height * percentage)))
+        imageView.contentMode = .scaleAspectFit
+        imageView.image = image
+        UIGraphicsBeginImageContextWithOptions(imageView.bounds.size, false, image.scale)
+        guard let context = UIGraphicsGetCurrentContext() else { return nil }
+        imageView.layer.render(in: context)
+        guard let result = UIGraphicsGetImageFromCurrentImageContext() else { return nil }
+        UIGraphicsEndImageContext()
+        return result
+    }
+    
+    private func resizedImageData(with data: Data?, limitInKB limit: Double) -> Data? {
+        guard
+            let nonNilData = data,
+            let nonNilImage = UIImage(data: nonNilData),
+            let imageData = nonNilImage.jpegData(compressionQuality: 100)
+        else {
+            return nil
+        }
+        
+        var resizingImage = nonNilImage
+        var imageSizeKB = Double(imageData.count) / 1024
+        
+        while imageSizeKB > limit {
+            guard let resizedImage = self.resizeWithPercentage(image: resizingImage, percentage: 0.2),
+                  let imageData = resizedImage.jpegData(compressionQuality: 100)
+            else { return nil }
+            
+            resizingImage = resizedImage
+            imageSizeKB = Double(imageData.count) / 1024
+        }
+        
+        return resizingImage.jpegData(compressionQuality: 100)
     }
     
 }
