@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AD6BB78C537C99322904EB7D /* Pods_StoreModule_StoreModuleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95DBFD97B063DD38567CA2FE /* Pods_StoreModule_StoreModuleTests.framework */; };
+		A060F183FF9A4081A6A474AA /* Pods_StoreModule_StoreModuleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8632BA893850A631D61468 /* Pods_StoreModule_StoreModuleTests.framework */; };
 		DF588C5607D3B2C5319FB888 /* Pods_StoreModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043A6E8AC95890A32227C3C8 /* Pods_StoreModule.framework */; };
 		EF2BE25A284723B900A29197 /* GetStoresRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BE259284723B900A29197 /* GetStoresRepository.swift */; };
 		EF2BE25E284723C600A29197 /* DAOStoresBaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BE25C284723C600A29197 /* DAOStoresBaseClass.swift */; };
@@ -49,7 +49,7 @@
 		534C030DB0C3D1F82220A463 /* Pods-StoreModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreModule.debug.xcconfig"; path = "../../Main/Pods/Target Support Files/Pods-StoreModule/Pods-StoreModule.debug.xcconfig"; sourceTree = "<group>"; };
 		6022E59AD7D68351B1F2DDCE /* Pods-StoreModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreModule.release.xcconfig"; path = "../../Main/Pods/Target Support Files/Pods-StoreModule/Pods-StoreModule.release.xcconfig"; sourceTree = "<group>"; };
 		798C84F1852B0ECF2FA396D2 /* Pods-StoreModule-StoreModuleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreModule-StoreModuleTests.release.xcconfig"; path = "../../Main/Pods/Target Support Files/Pods-StoreModule-StoreModuleTests/Pods-StoreModule-StoreModuleTests.release.xcconfig"; sourceTree = "<group>"; };
-		95DBFD97B063DD38567CA2FE /* Pods_StoreModule_StoreModuleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StoreModule_StoreModuleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB8632BA893850A631D61468 /* Pods_StoreModule_StoreModuleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StoreModule_StoreModuleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C85049B9B3CCA0DDF68DF1D8 /* Pods-StoreModule-StoreModuleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreModule-StoreModuleTests.debug.xcconfig"; path = "../../Main/Pods/Target Support Files/Pods-StoreModule-StoreModuleTests/Pods-StoreModule-StoreModuleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EF2BE259284723B900A29197 /* GetStoresRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetStoresRepository.swift; sourceTree = "<group>"; };
 		EF2BE25C284723C600A29197 /* DAOStoresBaseClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAOStoresBaseClass.swift; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF64AB8D2851D87B004ADEF3 /* StoreModule.framework in Frameworks */,
-				AD6BB78C537C99322904EB7D /* Pods_StoreModule_StoreModuleTests.framework in Frameworks */,
+				A060F183FF9A4081A6A474AA /* Pods_StoreModule_StoreModuleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +104,7 @@
 				EFBA17DF283793B200342972 /* NetworkModule.framework */,
 				EFBA17DB283793AC00342972 /* CommonModule.framework */,
 				043A6E8AC95890A32227C3C8 /* Pods_StoreModule.framework */,
-				95DBFD97B063DD38567CA2FE /* Pods_StoreModule_StoreModuleTests.framework */,
+				BB8632BA893850A631D61468 /* Pods_StoreModule_StoreModuleTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

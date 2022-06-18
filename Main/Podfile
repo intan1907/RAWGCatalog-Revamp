@@ -34,7 +34,6 @@ target 'RAWGCatalog' do
   core_pod
   utils_pods
   target 'RAWGCatalogTests' do
-    inherit! :search_paths
     non_await_testing_pods
   end
 end
@@ -45,7 +44,6 @@ target 'GameModule' do
   core_pod
 
   target 'GameModuleTests' do
-    inherit! :complete
     testing_pods
   end
 end
@@ -55,7 +53,6 @@ target 'AboutModule' do
   core_pod
 
   target 'AboutModuleTests' do
-    inherit! :complete
     testing_pods
   end
 end
@@ -65,7 +62,6 @@ target 'GenreModule' do
   core_pod
   
   target 'GenreModuleTests' do
-    inherit! :complete
     testing_pods
   end
 end
@@ -75,7 +71,6 @@ target 'StoreModule' do
   core_pod
 
   target 'StoreModuleTests' do
-    inherit! :complete
     testing_pods
   end
 end
